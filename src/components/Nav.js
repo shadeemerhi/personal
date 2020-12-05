@@ -14,6 +14,7 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: 'column',
       justifyContent: 'flex-start',
       height: '100vh',
+      paddingTop: '50px',
     }
   }
 }));

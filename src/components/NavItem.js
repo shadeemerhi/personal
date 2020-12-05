@@ -8,22 +8,41 @@ const useStyles = makeStyles((theme) => ({
     '&:visited': {
       color: 'black'
     },
-    width: '100%'
+    width: '100%',
   },
 
   container: {
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    fontSize: '12pt',
+    padding: '20px',
+    fontSize: '10pt',
     [theme.breakpoints.up('sm')]: {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'flex-start',
-      width: '100%',
+      fontSize: '12pt',
+      border: '2px solid green'
+    },
+    [theme.breakpoints.up('md')]: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'flex-start',
+      fontSize: '16pt',
       border: '2px solid green'
     }
-  }
+  },
+
+  icon: {
+    fontSize: '1.5rem',
+    [theme.breakpoints.up('sm')]: {
+      margin: '0rem 1rem 0rem 0rem'
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '2rem',
+      margin: '0rem 1.5rem 0rem 0rem'
+    }
+  },
 }));
 
 export default function NavItem(props) {
@@ -33,7 +52,7 @@ export default function NavItem(props) {
   return(
     <Link to={props.url} className={classes.link}>
       <div className={classes.container}>
-        <props.icon/>
+        <props.icon className={classes.icon}/>
         {props.name}
       </div>
     </Link>
