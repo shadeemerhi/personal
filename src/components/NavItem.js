@@ -17,24 +17,30 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'center',
     padding: '20px',
     fontSize: '10pt',
+    fontWeight: '400',
+    color: 'white',
+    transition: '0.2s ease-in-out',
     [theme.breakpoints.up('sm')]: {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'flex-start',
       fontSize: '12pt',
-      border: '2px solid green'
+      '&:hover': {
+        background: '#1db954',
+        borderRadius: '10px'
+      }
     },
     [theme.breakpoints.up('md')]: {
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'flex-start',
-      fontSize: '16pt',
-      border: '2px solid green'
+      fontSize: '14pt',
     }
   },
 
   icon: {
     fontSize: '1.5rem',
+    color: 'white',
     [theme.breakpoints.up('sm')]: {
       margin: '0rem 1rem 0rem 0rem'
     },

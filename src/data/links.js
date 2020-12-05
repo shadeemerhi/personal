@@ -1,6 +1,6 @@
 import HomeIcon from "@material-ui/icons/Home";
 import CodeIcon from '@material-ui/icons/Code';
-import WorkIcon from '@material-ui/icons/Work';
+import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
 
 export const links = [
   {
@@ -19,6 +19,6 @@ export const links = [
     id: 3,
     name: 'Experience',
     url: '/experience',
-    icon: WorkIcon
+    icon: WorkOutlineIcon
   }
 ]

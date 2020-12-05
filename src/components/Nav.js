@@ -7,14 +7,14 @@ const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
     height: '50px',
+    background: '#121212',
     justifyContent: 'space-around',
-    border: '2px solid red',
     alignItems: 'center',
     [theme.breakpoints.up('sm')]: {
       flexDirection: 'column',
       justifyContent: 'flex-start',
       height: '100vh',
-      paddingTop: '50px',
+      // paddingTop: '50px',
     }
   }
 }));
