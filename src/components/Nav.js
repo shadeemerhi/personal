@@ -1,9 +1,21 @@
 import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
+import NavItem from './NavItem';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    border: '2px solid red'
+    display: 'flex',
+    flexDirection: 'column',
+    height: '100vh',
+    padding: '20px',
+    border: '2px solid red',
+    [theme.breakpoints.down('xs')]: {
+      flexDirection: 'row',
+      alignItems: 'center',
+      justifyContent: 'space-around',
+      height: '80px',
+      padding: '0'
+    }
   }
 }));
 
@@ -13,7 +25,9 @@ export default function Nav() {
 
   return(
     <div className={classes.root}>
-      <h1>Navigation</h1>
+      <NavItem />
+      <NavItem />
+      <NavItem />
     </div>
   )
 }
