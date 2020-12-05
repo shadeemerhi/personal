@@ -16,9 +16,9 @@ export const links = [
     icon: CodeIcon
   },
   {
-    id: 4,
-    name: 'Education',
-    url: '/education',
+    id: 3,
+    name: 'Experience',
+    url: '/experience',
     icon: ImportContactsIcon
   }
 ]

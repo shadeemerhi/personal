@@ -1,6 +1,6 @@
-import { Link } from 'react-router-dom';
 import { makeStyles } from '@material-ui/core/styles';
 import NavItem from './NavItem';
+import { links } from '../data/links'
 
 const useStyles = makeStyles((theme) => ({
 
@@ -9,12 +9,11 @@ const useStyles = makeStyles((theme) => ({
     height: '50px',
     justifyContent: 'space-around',
     border: '2px solid red',
+    alignItems: 'center',
     [theme.breakpoints.up('sm')]: {
       flexDirection: 'column',
-      alignItems: 'center',
       justifyContent: 'flex-start',
       height: '100vh',
-      padding: '10px'
     }
   }
 }));
@@ -25,8 +24,14 @@ export default function Nav() {
 
   return(
     <div className={classes.root}>
-      <NavItem />
-      <NavItem />
+      {links.map(link => {
+        return (
+          <NavItem
+            key={link.id}
+            {...link}
+          />
+        )
+      })}
     </div>
   )
 }

@@ -5,13 +5,12 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Home() {
-
+export default function Experience() {
   const classes = useStyles();
 
-  return(
+  return (
     <div className={classes.root}>
-      <h1>Home</h1>
+      <h1>Experience</h1>
     </div>
   )
 }

@@ -6,7 +6,11 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function Projects() {
+  const classes = useStyles();
+
   return (
-    <h1>Projects page</h1>
+    <div className={classes.root}>
+      <h1>Projects</h1>
+    </div>
   )
 }
