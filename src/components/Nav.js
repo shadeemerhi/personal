@@ -27,7 +27,6 @@ export default function Nav() {
     <div className={classes.root}>
       <NavItem />
       <NavItem />
-      <NavItem />
     </div>
   )
 }

@@ -5,8 +5,8 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Projects() {
+export default function Education() {
   return (
-    <h1>Projects page</h1>
+    <h1>Education Page</h1>
   )
 }

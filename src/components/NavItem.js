@@ -12,8 +12,8 @@ export default function NavItem() {
   const classes = useStyles();
 
   return(
-    <div className={classes.root}>
+    <Link to="/projects">
       <p className={classes.root}>Nav Item</p>
-    </div>
+    </Link>
   )
 }
