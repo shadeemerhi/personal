@@ -26,11 +26,12 @@ export default function App() {
         </Grid>
       </Grid>
 
-
-      <Route path="/"/>
-      <Route path="/projects"/>
-      <Route path="/education"/>
-      <Route path="/experience"/>
+      <Switch>
+        <Route path="/"/>
+        <Route path="/projects"/>
+        <Route path="/education"/>
+        <Route path="/experience"/>
+      </Switch>
     </Router>
   )
 }

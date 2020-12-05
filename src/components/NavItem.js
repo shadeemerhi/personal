@@ -3,6 +3,7 @@ import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    fontWeight: 100
   }
 }));
 
@@ -12,7 +13,7 @@ export default function NavItem() {
 
   return(
     <div className={classes.root}>
-      <p>Nav Item</p>
+      <p className={classes.root}>Nav Item</p>
     </div>
   )
 }

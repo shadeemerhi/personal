@@ -3,18 +3,18 @@ import { makeStyles } from '@material-ui/core/styles';
 import NavItem from './NavItem';
 
 const useStyles = makeStyles((theme) => ({
+
   root: {
     display: 'flex',
-    flexDirection: 'column',
-    height: '100vh',
-    padding: '20px',
+    height: '50px',
+    justifyContent: 'space-around',
     border: '2px solid red',
-    [theme.breakpoints.down('xs')]: {
-      flexDirection: 'row',
+    [theme.breakpoints.up('sm')]: {
+      flexDirection: 'column',
       alignItems: 'center',
-      justifyContent: 'space-around',
-      height: '80px',
-      padding: '0'
+      justifyContent: 'flex-start',
+      height: '100vh',
+      padding: '10px'
     }
   }
 }));
