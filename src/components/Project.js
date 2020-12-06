@@ -119,7 +119,7 @@ export default function Project(props) {
   return (
     <Grid item xs={12} className={classes.root}>
       <div className={classes.titleContainer}>
-        <Typography className={classes.date}>NOV/DEC 2020</Typography>
+        <Typography className={classes.date}>{props.date}</Typography>
         <Link href="" className={classes.link}>
           <Typography className={classes.title}>{props.name}</Typography>
         </Link>

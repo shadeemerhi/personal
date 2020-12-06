@@ -8,7 +8,8 @@ export const projects = [
       front: ['React', 'Material UI'],
       back: ['Node.js', 'Express', 'PostgreSQL'],
       other: ['Socket.io', 'Stripe API', 'Google Maps API']
-    }
+    },
+    date: 'NOV/DEC 2020'
   },
   {
     id: 2,
