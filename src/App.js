@@ -5,6 +5,7 @@ import Nav from './components/Nav';
 import Home from './components/Home';
 import Projects from './components/Projects';
 import Experience from './components/Experience';
+import Header from './components/Header';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -24,6 +25,7 @@ export default function App() {
           <Nav /> 
         </Grid>
         <Grid item xs={12} sm={9}>
+          <Header />
           <Switch>
             <Route path="/projects" component={Projects}/>
             <Route path="/experience" component={Experience}/>
