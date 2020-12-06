@@ -23,6 +23,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Nav() {
 
   const classes = useStyles();
+  const [navItem, setNavItem] = useState('Home')
 
   return(
     <div className={classes.root}>
@@ -31,6 +32,8 @@ export default function Nav() {
           <NavItem
             key={link.id}
             {...link}
+            selected={link.name === navItem}
+            setNavItem={setNavItem}
           />
         )
       })}

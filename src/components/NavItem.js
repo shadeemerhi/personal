@@ -16,10 +16,11 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'center',
     padding: '25px',
-    fontSize: '10pt',
+    fontSize: '8pt',
     fontWeight: '700',
     color: 'white',
-    // background: '#1db954',
+    borderRadius: '20px',
+    background: props => props.selected ? '#1db954' : 'none',
     transition: '0.2s ease-in-out',
     [theme.breakpoints.up('sm')]: {
       flexDirection: 'row',
@@ -28,7 +29,6 @@ const useStyles = makeStyles((theme) => ({
       fontSize: '12pt',
       '&:hover': {
         background: '#1db954',
-        borderRadius: '10px'
       }
     },
     [theme.breakpoints.up('md')]: {
@@ -54,10 +54,10 @@ const useStyles = makeStyles((theme) => ({
 
 export default function NavItem(props) {
 
-  const classes = useStyles();
+  const classes = useStyles(props);
 
   return(
-    <Link to={props.url} className={classes.link}>
+    <Link to={props.url} className={classes.link} onClick={() => props.setNavItem(props.name)}>
       <div className={classes.container}>
         <props.icon className={classes.icon}/>
         {props.name}
