@@ -11,7 +11,7 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'flex-start',
-    border: '2px solid red',
+    // border: '2px solid red',
     [theme.breakpoints.down('md')]: {
       alignItems: 'center'
     }
@@ -34,11 +34,12 @@ const useStyles = makeStyles((theme) => ({
 
   image: {
     maxWidth: '500px',
+    maxHeight: '300px',
     [theme.breakpoints.down('md')]: {
       maxWidth: '400px'
     },
     [theme.breakpoints.down('xs')]: {
-      maxWidth: '290px'
+      maxWidth: '270px'
     }
   },
 
@@ -56,6 +57,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   description: {
+    margin: '1.5rem 0rem 1.5rem 0rem',
     [theme.breakpoints.down('xs')]: {
       fontSize: '10pt'
     }
@@ -65,7 +67,13 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     justifyContent: 'space-between',
-    padding: '0rem 1.5rem 1.5rem 1.5rem'
+    padding: '0rem 1.5rem 1.5rem 1.5rem',
+    [theme.breakpoints.down('md')]: {
+      padding: '1rem 0rem 1rem 0rem'
+    },
+    [theme.breakpoints.down('xs')]: {
+      padding: '0rem 1.5rem 1.5rem 1.5rem'
+    },
   },
 
   stackContainer: {
