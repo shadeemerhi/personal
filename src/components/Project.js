@@ -12,7 +12,8 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     alignItems: 'flex-start',
     // border: '2px solid red',
-    [theme.breakpoints.down('md')]: {
+    margin: '1rem 0rem 1rem 0rem',
+    [theme.breakpoints.down('sm')]: {
       alignItems: 'center'
     }
   },
@@ -28,14 +29,34 @@ const useStyles = makeStyles((theme) => ({
     }
   },
 
+  titleContainer: {
+    display: 'flex',
+    flexDirection: 'row-reverse',
+    justifyContent: 'flex-start',
+    alignItems: 'center',
+    [theme.breakpoints.down('sm')]: {
+      flexDirection: 'column',
+    },
+  },
+
   title: {
     fontSize: '20pt',
+  },
+
+  date: {
+    fontSize: '7pt',
+    fontWeight: '900',
+    color: '#b3b3b3',
+    marginLeft: '1rem',
+    [theme.breakpoints.down('sm')]: {
+      margin: 0,
+    },
   },
 
   image: {
     maxWidth: '500px',
     maxHeight: '300px',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       maxWidth: '400px'
     },
     [theme.breakpoints.down('xs')]: {
@@ -46,7 +67,7 @@ const useStyles = makeStyles((theme) => ({
   content: {
     display: 'flex',
     // border: '2px solid green',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       flexDirection: 'column',
       alignItems: 'center',
       width: '400px'
@@ -57,8 +78,15 @@ const useStyles = makeStyles((theme) => ({
   },
 
   description: {
-    margin: '1.5rem 0rem 1.5rem 0rem',
+    marginBottom: '1.5rem',
+      [theme.breakpoints.down('md')]: {
+        fontSize: '10pt'
+      },
+      [theme.breakpoints.down('sm')]: {
+        fontSize: '10pt'
+      },
     [theme.breakpoints.down('xs')]: {
+      margin: '1.5rem 0rem 1.5rem 0rem',
       fontSize: '10pt'
     }
   },
@@ -90,9 +118,12 @@ export default function Project(props) {
 
   return (
     <Grid item xs={12} className={classes.root}>
-      <Link href="" className={classes.link}>
-        <Typography className={classes.title}>{props.name}</Typography>
-      </Link>
+      <div className={classes.titleContainer}>
+        <Typography className={classes.date}>NOV/DEC 2020</Typography>
+        <Link href="" className={classes.link}>
+          <Typography className={classes.title}>{props.name}</Typography>
+        </Link>
+      </div>
       <div className={classes.content}>
         <img src={`${process.env.PUBLIC_URL}/images/${props.image}`} className={classes.image} alt="missing"/>
         <div className={classes.info}>
