@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
+import StackItem from './StackItem';
 import { Typography } from '@material-ui/core';
 // import test from '../data/images/simplifix.png';
 
@@ -13,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     alignItems: 'flex-start',
     // border: '2px solid red',
     margin: '1rem 0rem 1rem 0rem',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       alignItems: 'center'
     }
   },
@@ -68,7 +69,7 @@ const useStyles = makeStyles((theme) => ({
   content: {
     display: 'flex',
     // border: '2px solid green',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       flexDirection: 'column',
       alignItems: 'center',
       width: '400px'
@@ -113,22 +114,25 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '20px'
   },
 
-  frontContainer: {
-    
+  singleStackContainer: {
+    display: 'flex',
+    alignItems: 'center',
+    margin: '0.2rem 0rem 0.2rem 0rem'
   },
 
-  backContainer: {
-    
+  itemContainer: {
+    display: 'flex',
+    flexWrap: 'wrap'
   },
-
-  otherContainer: {
-    
-  },
+  
 
   stackText: {
-    // color: '#b3b3b3', 
     fontWeight: '900', 
-    fontSize: '10pt',
+    fontSize: '12pt',
+    borderBottom: '1px solid #1db954',
+    [theme.breakpoints.down('xs')]: {
+      fontSize: '8pt'
+    },
   }
 }));
 
@@ -151,17 +155,32 @@ export default function Project(props) {
           <Typography className={classes.description}>{props.description}</Typography>
           <div>
             <div style={{display: 'flex', justifyContent: 'center'}}>
-              <Typography className={classes.stackText}>STACK</Typography>  
+              <Typography className={classes.stackText} style={{borderBottom: 'none'}}>STACK</Typography>  
             </div>
             <div className={classes.stackContainer}>
-              <div className={classes.frontContainer}>
+              <div className={classes.singleStackContainer}>
               <Typography className={classes.stackText}>FRONT:</Typography>
+              <div className={classes.itemContainer}>
+                {props.stack.front.map(item => {
+                  return <StackItem item={item}/>
+                })}
               </div>
-              <div className={classes.backContainer}>
+              </div>
+              <div className={classes.singleStackContainer}>
                 <Typography className={classes.stackText}>BACK:</Typography>
+                <div className={classes.itemContainer}>
+                    {props.stack.back.map(item => {
+                    return <StackItem item={item}/>
+                  })}
               </div>
-              <div className={classes.otherContainer}>
+              </div>
+              <div className={classes.singleStackContainer}>
                 <Typography className={classes.stackText}>OTHER:</Typography>
+                <div className={classes.itemContainer}>
+                    {props.stack.other.map(item => {
+                    return <StackItem item={item}/>
+                  })}
+              </div>
               </div>
             </div>
           </div>
