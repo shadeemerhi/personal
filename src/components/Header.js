@@ -1,6 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
 import test from '../data/images/test.jpg';
 import Typography from '@material-ui/core/Typography';
+import CheckCircleIcon from '@material-ui/icons/CheckCircle';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -19,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: '900',
     position: 'absolute',
     bottom: '10px',
-    left: '10px',
+    left: '15px',
     [theme.breakpoints.up('sm')]: {
       fontSize: '44pt',
       left: '25px',
@@ -33,6 +34,29 @@ const useStyles = makeStyles((theme) => ({
     }
   },
 
+  name: {
+    fontSize: '30pt',
+    fontWeight: '900',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '44pt',
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '56pt',
+
+    }
+  },
+
+  labelContainer: {
+    display: 'flex',
+    alignItems: 'center'
+  },
+
+  label: {
+    fontSize: '9pt',
+    fontWeight: '900',
+    margin: '0rem 0.5rem 0rem 0rem'
+  }
+
 }));
 
 export default function Header() {
@@ -40,7 +64,13 @@ export default function Header() {
 
   return(
     <div className={classes.root}>
-      <Typography className={classes.overlay}>Shadee Merhi</Typography>
+      <div className={classes.overlay}>
+        <div className={classes.labelContainer}>
+          <Typography className={classes.label}>DEVELOPER</Typography>
+          <CheckCircleIcon style={{color: '#147efb'}}/>
+        </div>
+        <Typography className={classes.name}>Shadee Merhi</Typography>
+      </div>
     </div>
   )
 }

@@ -19,6 +19,7 @@ const useStyles = makeStyles((theme) => ({
     fontSize: '10pt',
     fontWeight: '700',
     color: 'white',
+    // background: '#1db954',
     transition: '0.2s ease-in-out',
     [theme.breakpoints.up('sm')]: {
       flexDirection: 'row',
