@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import test from '../data/images/test.jpg';
 import Typography from '@material-ui/core/Typography';
 import Link from '@material-ui/core/Link';
 import CheckCircleIcon from '@material-ui/icons/CheckCircle';
@@ -10,8 +9,7 @@ import EmailIcon from '@material-ui/icons/Email';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(33, 33, 33, 1)), url(${test})`,
-    // backgroundImage: `url(${test})`,
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(33, 33, 33, 1)), url(${process.env.PUBLIC_URL}/images/test.jpg)`,
     backgroundSize: 'cover',
     height: '260px',
     position: 'relative',
