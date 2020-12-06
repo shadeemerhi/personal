@@ -40,8 +40,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   name: {
+    fontFamily: 'proxima-nova, sans-serif',
     fontSize: '28pt',
-    fontWeight: '900',
+    fontWeight: '800',
     [theme.breakpoints.up('sm')]: {
       fontSize: '44pt',
     },
@@ -57,8 +58,9 @@ const useStyles = makeStyles((theme) => ({
   },
 
   label: {
+    fontFamily: 'proxima-nova, sans-serif',
     fontSize: '9pt',
-    fontWeight: '900',
+    fontWeight: '600',
     margin: '0rem 0.5rem 0rem 0rem'
   },
 
@@ -71,8 +73,8 @@ const useStyles = makeStyles((theme) => ({
   },
 
   button: {
-    fontFamily: 'proxima-nova',
-    fontWeight: '400',
+    fontFamily: 'proxima-nova, sans-serif',
+    fontWeight: '500',
     borderRadius: '20px',
     margin: '0rem 1rem 0rem 0rem',
     color: 'white',

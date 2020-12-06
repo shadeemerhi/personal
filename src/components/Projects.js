@@ -1,4 +1,7 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { projects } from '../data/projects';
+import Project from './Project';
+import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -8,9 +11,14 @@ const useStyles = makeStyles((theme) => ({
 export default function Projects() {
   const classes = useStyles();
 
+
   return (
-    <div className={classes.root}>
-      <h1>Projects</h1>
-    </div>
+    <Grid container>
+      {projects.map(project => {
+        return <Project
+          {...project}
+        />
+      })}
+    </Grid>
   )
 }
