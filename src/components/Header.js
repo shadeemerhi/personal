@@ -126,27 +126,27 @@ export default function Header() {
         </div>
         <Typography className={classes.name}>Shadee Merhi</Typography>
         <div className={classes.buttonContainer}>
-          <Button variant="outlined" className={classes.button} href="https://github.com/shadeemerhi">
+          <Button variant="outlined" className={classes.button} href="https://github.com/shadeemerhi" target="_blank">
           <Typography className={classes.buttonText}>GitHub</Typography>
           <GitHubIcon style={{marginLeft: '0.5rem'}}/>
           </Button>
-          <Button variant="outlined" className={classes.button} href="https://www.linkedin.com/in/shadee-m-a27134ba/">
+          <Button variant="outlined" className={classes.button} href="https://www.linkedin.com/in/shadee-m-a27134ba/" target="_blank">
           <Typography className={classes.buttonText}>LinkedIn</Typography>
           <LinkedInIcon style={{marginLeft: '0.5rem'}}/>
           </Button>
-          <Button variant="outlined" className={classes.button} href="mailto: shadmerhi@gmail.com">
+          <Button variant="outlined" className={classes.button} href="mailto: shadmerhi@gmail.com" target="_blank">
           <Typography className={classes.buttonText}>Email</Typography>
           <EmailIcon style={{marginLeft: '0.5rem'}}/>
           </Button>
         </div>
         <div className={classes.iconContainer}>
-          <Link href="https://github.com/shadeemerhi" className={classes.icon}>
+          <Link href="https://github.com/shadeemerhi" target="_blank" className={classes.icon}>
             <GitHubIcon/>
           </Link>
-          <Link href="https://www.linkedin.com/in/shadee-m-a27134ba/" className={classes.icon}>
+          <Link href="https://www.linkedin.com/in/shadee-m-a27134ba/" target="_blank" className={classes.icon}>
             <LinkedInIcon/>
           </Link>
-          <Link href="mailto: shadmerhi@gmail.com" className={classes.icon}>
+          <Link href="mailto: shadmerhi@gmail.com" target="_blank" className={classes.icon}>
             <EmailIcon/>
           </Link>
         </div>

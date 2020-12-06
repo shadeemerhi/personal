@@ -11,7 +11,7 @@ export default function Home() {
 
   return(
     <div className={classes.root}>
-      <h1>Home</h1>
+      <h1>About</h1>
     </div>
   )
 }
