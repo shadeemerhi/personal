@@ -38,7 +38,7 @@ export default function HomeNav() {
       </div>
 
       <Switch>
-        <Route path='/about' component={() => <About textMain={subLinks[0].textMain} textSub={subLinks[0].textSub}/>}>
+        <Route path='/' component={() => <About textMain={subLinks[0].textMain} textSub={subLinks[0].textSub}/>}>
         </Route>
         <Route path='/skills' component={Skills}>
         </Route>
