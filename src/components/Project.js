@@ -41,6 +41,7 @@ const useStyles = makeStyles((theme) => ({
 
   title: {
     fontSize: '20pt',
+    fontWeight: '900'
   },
 
   date: {
@@ -105,9 +106,29 @@ const useStyles = makeStyles((theme) => ({
   },
 
   stackContainer: {
+    display: 'flex',
+    flexDirection: 'column',
     padding: '10px',
     border: '1px solid #1db954',
     borderRadius: '20px'
+  },
+
+  frontContainer: {
+    
+  },
+
+  backContainer: {
+    
+  },
+
+  otherContainer: {
+    
+  },
+
+  stackText: {
+    // color: '#b3b3b3', 
+    fontWeight: '900', 
+    fontSize: '10pt',
   }
 }));
 
@@ -128,11 +149,21 @@ export default function Project(props) {
         <img src={`${process.env.PUBLIC_URL}/images/${props.image}`} className={classes.image} alt="missing"/>
         <div className={classes.info}>
           <Typography className={classes.description}>{props.description}</Typography>
-          <div className={classes.stackContainer}>
-            <Typography></Typography>
-            <Typography>STACK</Typography>
-            <Typography>Thing 1</Typography>
-            <Typography>Thing 2</Typography>
+          <div>
+            <div style={{display: 'flex', justifyContent: 'center'}}>
+              <Typography className={classes.stackText}>STACK</Typography>  
+            </div>
+            <div className={classes.stackContainer}>
+              <div className={classes.frontContainer}>
+              <Typography className={classes.stackText}>FRONT:</Typography>
+              </div>
+              <div className={classes.backContainer}>
+                <Typography className={classes.stackText}>BACK:</Typography>
+              </div>
+              <div className={classes.otherContainer}>
+                <Typography className={classes.stackText}>OTHER:</Typography>
+              </div>
+            </div>
           </div>
         </div>
       </div>

@@ -14,7 +14,7 @@ export const projects = [
   {
     id: 2,
     name: 'Foodood',
-    description: 'An intermediary food ordering app',
+    description: 'An intermediary food ordering app that utilizes the Twilio SMS API to allow for real-time notifications',
     image: 'foodood.png',
     stack: {
       front: [],
