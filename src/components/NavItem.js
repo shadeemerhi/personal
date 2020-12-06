@@ -15,9 +15,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: '20px',
+    padding: '25px',
     fontSize: '10pt',
-    fontWeight: '400',
+    fontWeight: '700',
     color: 'white',
     transition: '0.2s ease-in-out',
     [theme.breakpoints.up('sm')]: {

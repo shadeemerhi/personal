@@ -4,22 +4,35 @@ import Typography from '@material-ui/core/Typography';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-
-
-    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(0, 0, 0, 0.5)), url(${test})`,
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(33, 33, 33, 1)), url(${test})`,
     // backgroundImage: `url(${test})`,
     backgroundSize: 'cover',
-    height: '300px',
-    position: 'relative'
+    height: '260px',
+    position: 'relative',
+    [theme.breakpoints.up('sm')]: {
+      height: '350px'
+    },
   },
 
   overlay: {
-    fontSize: '50pt',
+    fontSize: '30pt',
     fontWeight: '900',
     position: 'absolute',
-    bottom: '50px',
-    left: '30px'
-  }
+    bottom: '10px',
+    left: '10px',
+    [theme.breakpoints.up('sm')]: {
+      fontSize: '44pt',
+      left: '25px',
+      bottom: '60px'
+    },
+    [theme.breakpoints.up('md')]: {
+      fontSize: '56pt',
+      left: '25px',
+      bottom: '60px'
+
+    }
+  },
+
 }));
 
 export default function Header() {
