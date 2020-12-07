@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.up('sm')]: {
       flexDirection: 'column',
       justifyContent: 'flex-start',
-      height: '100vh',
+      height: '100%',
       // paddingTop: '50px',
     }
   }

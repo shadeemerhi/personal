@@ -18,7 +18,8 @@ export const projects = [
     image: 'foodood.png',
     stack: {
       front: [],
-      back: []
+      back: [],
+      other: []
     }
   },
   {
@@ -28,7 +29,8 @@ export const projects = [
     image: '',
     stack: {
       front: [],
-      back: []
+      back: [],
+      other: []
     }
   },
   {
@@ -38,7 +40,8 @@ export const projects = [
     image: '',
     stack: {
       front: [],
-      back: []
+      back: [],
+      other: []
     }
   },
   {
@@ -48,7 +51,8 @@ export const projects = [
     image: '',
     stack: {
       front: [],
-      back: []
+      back: [],
+      other: []
     }
   },
   {
@@ -58,7 +62,8 @@ export const projects = [
     image: '',
     stack: {
       front: [],
-      back: []
+      back: [],
+      other: []
     }
   },
 ]
