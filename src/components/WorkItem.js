@@ -7,10 +7,14 @@ import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: '20px',
-    transition: '0.1s ease-in-out',
+    transition: '0.2s ease-in-out',
     border: play => play ? '1px solid #1db954' : '1px solid #b3b3b3',
     margin: '1rem 0rem 1rem 0rem',
-    borderRadius: '20px'
+    borderRadius: '20px',
+    '&:hover': {
+      // border: '1px solid white'
+      border: play => play ? '1px solid #1db954' : '1px solid white'
+    }
   },
 
   main: {
@@ -25,7 +29,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   items: {
-
+    marginTop: '1rem'
   },
 
   playBtn: {
@@ -33,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     transition: '0.1s ease-in-out',
     color: play => play ? 'white' : '#b3b3b3',
     '&:hover': {
+      color: 'white',
       fontSize: '41pt',
       cursor: 'pointer',
     },
@@ -58,7 +63,7 @@ export default function WorkItem(props) {
           <WorkItemHeader {...props}/>
         </div>
       </div>
-      { play && 
+      {play && 
         <div className={classes.items}>
           {props.items.map(item => {
             return (
