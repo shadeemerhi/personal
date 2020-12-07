@@ -27,11 +27,11 @@ export default function Experience() {
     <div className={classes.root}>
       <SubNav subNavItem={subNavItem} setSubNavItem={setSubNavItem} links={links}/>
       <Switch>
-        <Route path='/experience' component={Work}>
-        </Route>
         <Route path='/experience/education' component={Education}>
         </Route>
         <Route path='/experience/volunteer' component={Volunteer}>
+        </Route>
+        <Route path='/experience' component={Work}>
         </Route>
       </Switch>
     </div>
