@@ -14,18 +14,23 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     flexDirection: 'column',
     alignItems: 'center',
-    padding: '25px',
+    // padding: '25px',
+    height: '50px',
+    justifyContent: 'center',
+    borderRadius: '0px',
     fontSize: '8pt',
     fontWeight: '700',
     color: 'white',
-    borderRadius: '20px',
+    // borderRadius: '20px',
     background: props => props.selected ? '#1db954' : 'none',
     transition: '0.2s ease-in-out',
     [theme.breakpoints.up('sm')]: {
+      padding: '15px',
+      borderRadius: '20px',
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'flex-start',
-      fontSize: '12pt',
+      fontSize: '13pt',
       '&:hover': {
         background: '#1db954',
       }
@@ -34,7 +39,7 @@ const useStyles = makeStyles((theme) => ({
       flexDirection: 'row',
       alignItems: 'center',
       justifyContent: 'flex-start',
-      fontSize: '14pt',
+      fontSize: '16pt',
     }
   },
 

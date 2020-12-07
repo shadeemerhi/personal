@@ -20,6 +20,12 @@ export const links = [
     name: 'Experience',
     url: '/experience',
     icon: WorkOutlineIcon
+  },
+  {
+    id: 4,
+    name: 'Skills',
+    url: '/skills',
+    icon: WorkOutlineIcon
   }
 ]
 
