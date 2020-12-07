@@ -36,7 +36,7 @@ export default function HomeNav(props) {
   const classes = useStyles(props);
 
   return(
-    <Link to={props.url} className={classes.link} onClick={() => props.setHomeNavItem(props.name)}>
+    <Link to={props.url} className={classes.link} onClick={() => props.setSubNavItem(props.name)}>
       <Typography className={classes.text}>
         {props.name}
       </Typography>

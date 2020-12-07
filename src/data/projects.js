@@ -20,7 +20,9 @@ export const projects = [
       front: [],
       back: [],
       other: []
-    }
+    },
+    date: 'OCT/NOV 2020'
+
   },
   {
     id: 3,

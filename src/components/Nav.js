@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import NavItem from './NavItem';
-import { links } from '../data/links'
+import { links } from '../data/links/mainNav'
 
 const useStyles = makeStyles((theme) => ({
 
