@@ -21,12 +21,6 @@ export const links = [
     url: '/experience',
     icon: WorkOutlineIcon
   },
-  {
-    id: 4,
-    name: 'Skills',
-    url: '/skills',
-    icon: WorkOutlineIcon
-  }
 ]
 
 export const subLinks = [
