@@ -2,7 +2,6 @@ import { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import WorkTaskItem from './WorkTaskItem';
 import WorkItemHeader from './WorkItemHeader';
-import PlayCircleFilledIcon from '@material-ui/icons/PlayCircleFilled';
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 
 const useStyles = makeStyles((theme) => ({
@@ -34,11 +33,11 @@ const useStyles = makeStyles((theme) => ({
     transition: '0.1s ease-in-out',
     color: play => play ? 'white' : '#b3b3b3',
     '&:hover': {
-      fontSize: '42pt',
+      fontSize: '41pt',
       cursor: 'pointer',
     },
     '&:active': {
-      fontSize: '40pt',
+      fontSize: '39pt',
       // transform: 'translateY(4px)'
     }
   }
