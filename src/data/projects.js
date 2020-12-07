@@ -9,7 +9,8 @@ export const projects = [
       back: ['Node.js', 'Express', 'PostgreSQL'],
       other: ['Socket.io', 'Stripe API', 'Google Maps API']
     },
-    date: 'NOV/DEC 2020'
+    date: 'NOV/DEC 2020',
+    url: 'https://github.com/shadeemerhi/simplifix'
   },
   {
     id: 2,
@@ -21,7 +22,8 @@ export const projects = [
       back: [],
       other: []
     },
-    date: 'OCT/NOV 2020'
+    date: 'OCT 2020',
+    url: 'https://github.com/shadeemerhi/foodood'
 
   },
   {
@@ -33,7 +35,9 @@ export const projects = [
       front: [],
       back: [],
       other: []
-    }
+    },
+    date: 'OCT/NOV 2020',
+    url: 'https://github.com/shadeemerhi/scheduler'
   },
   {
     id: 4,
@@ -44,7 +48,9 @@ export const projects = [
       front: [],
       back: [],
       other: []
-    }
+    },
+    date: 'NOV 2020',
+    url: 'https://github.com/shadeemerhi/jungle'
   },
   {
     id: 5,
@@ -55,7 +61,9 @@ export const projects = [
       front: [],
       back: [],
       other: []
-    }
+    },
+    date: 'OCT 2020',
+    url: 'https://github.com/shadeemerhi/tweeter'
   },
   {
     id: 6,
@@ -66,6 +74,8 @@ export const projects = [
       front: [],
       back: [],
       other: []
-    }
+    },
+    date: 'SEP/OCT 2020',
+    url: 'https://github.com/shadeemerhi/tinyapp'
   },
 ]

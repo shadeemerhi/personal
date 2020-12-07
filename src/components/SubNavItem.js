@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function HomeNav(props) {
+export default function SubNavItem(props) {
 
   const classes = useStyles(props);
 

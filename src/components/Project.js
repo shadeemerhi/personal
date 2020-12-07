@@ -146,7 +146,7 @@ export default function Project(props) {
     <Grid item xs={12} className={classes.root}>
       <div className={classes.titleContainer}>
         <Typography className={classes.date}>{props.date}</Typography>
-        <Link href="" className={classes.link}>
+        <Link href={props.url} target="_blank" className={classes.link}>
           <Typography className={classes.title}>{props.name}</Typography>
         </Link>
       </div>
