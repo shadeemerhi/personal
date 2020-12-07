@@ -37,6 +37,7 @@ const useStyles = makeStyles((theme) => ({
     transition: '0.1s ease-in-out',
     color: play => play ? 'white' : '#b3b3b3',
     '&:hover': {
+      color: 'white',
       fontSize: '41pt',
       cursor: 'pointer',
     },
