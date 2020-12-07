@@ -1,4 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { workExperiences } from '../data/work'
+import WorkItem from './WorkItem';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -11,7 +13,11 @@ export default function Work() {
 
   return(
     <div className={classes.root}>
-      <p>Work</p>
+      {workExperiences.map(experience => {
+        return (
+          <WorkItem {...experience}/>
+        )
+      })}
     </div>
   )
 }

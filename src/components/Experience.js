@@ -27,7 +27,7 @@ export default function Experience() {
     <div className={classes.root}>
       <SubNav subNavItem={subNavItem} setSubNavItem={setSubNavItem} links={links}/>
       <Switch>
-        <Route path='/experience/work' component={Work}>
+        <Route path='/experience' component={Work}>
         </Route>
         <Route path='/experience/education' component={Education}>
         </Route>
