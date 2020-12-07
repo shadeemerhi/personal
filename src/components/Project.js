@@ -21,6 +21,7 @@ const useStyles = makeStyles((theme) => ({
   
   link: {
     textDecoration: 'none',
+    color: 'white',
     borderBottom: '2px solid #1db954',
     '&:visited': {
       color: 'white'
@@ -35,7 +36,9 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row-reverse',
     justifyContent: 'flex-start',
     alignItems: 'center',
+    marginLeft: '1rem',
     [theme.breakpoints.down('md')]: {
+      margin: '0',
       flexDirection: 'column',
     },
   },
@@ -50,8 +53,8 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: '900',
     color: '#b3b3b3',
     marginLeft: '1rem',
-    [theme.breakpoints.down('sm')]: {
-      margin: 0,
+    [theme.breakpoints.down('md')]: {
+      margin: '0',
     },
   },
 
