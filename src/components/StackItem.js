@@ -8,7 +8,7 @@ const useStyles = makeStyles((theme) => ({
     borderRadius: '8px',
     fontSize: '10pt',
     fontWeight: '800',
-    margin: '0.1rem 0.5rem 0.1rem 0.5rem',
+    margin: '0.1rem 0.2rem 0.1rem 0.2rem',
     [theme.breakpoints.down('xs')]: {
       fontSize: '8pt'
     },
