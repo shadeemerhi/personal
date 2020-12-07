@@ -7,37 +7,42 @@ export const projects = [
     stack: {
       front: ['React', 'Material UI'],
       back: ['Node.js', 'Express', 'PostgreSQL'],
-      other: ['Socket.io', 'Stripe API', 'Google Maps API']
+      deployment: ['Netlify', 'Heroku'],
+      test: ['Cypress'],
+      other: ['Socket.io', 'Axios', 'Stripe API', 'Google Maps API', 'Adobe XD']
     },
     date: 'NOV/DEC 2020',
     url: 'https://github.com/shadeemerhi/simplifix'
   },
   {
     id: 2,
+    name: 'Scheduler',
+    description: 'Students can schedule interviews with an interviewer of their choice',
+    image: 'scheduler.png',
+    stack: {
+      front: ['React', 'SASS', 'Axios'],
+      back: ['Node.js', 'Express', 'PostgreSQL'],
+      deployment: ['Netlify', 'Heroku'],
+      test: ['Jest', 'Storybook', 'Cypress'],
+      other: ['WebSockets','Axios']
+    },
+    date: 'OCT/NOV 2020',
+    url: 'https://github.com/shadeemerhi/scheduler'
+  },
+  {
+    id: 3,
     name: 'Foodood',
     description: 'An intermediary food ordering app that utilizes the Twilio SMS API to allow for real-time notifications',
     image: 'foodood.png',
     stack: {
-      front: [],
-      back: [],
-      other: []
+      front: ['JavaScript', 'jQuery', 'SASS', 'HTML5', 'Bootstrap'],
+      back: ['Node.js', 'Express', 'PostgreSQL'],
+      deployment: [],
+      test: [],
+      other: ['Adobe XD']
     },
     date: 'OCT 2020',
     url: 'https://github.com/shadeemerhi/foodood'
-
-  },
-  {
-    id: 3,
-    name: 'Scheduler',
-    description: 'Students can schedule interviews with an interviewer of their choice',
-    image: '',
-    stack: {
-      front: [],
-      back: [],
-      other: []
-    },
-    date: 'OCT/NOV 2020',
-    url: 'https://github.com/shadeemerhi/scheduler'
   },
   {
     id: 4,
@@ -47,6 +52,8 @@ export const projects = [
     stack: {
       front: [],
       back: [],
+      deployment: [],
+      test: [],
       other: []
     },
     date: 'NOV 2020',
@@ -60,6 +67,8 @@ export const projects = [
     stack: {
       front: [],
       back: [],
+      deployment: [],
+      test: [],
       other: []
     },
     date: 'OCT 2020',
@@ -73,6 +82,8 @@ export const projects = [
     stack: {
       front: [],
       back: [],
+      deployment: [],
+      test: [],
       other: []
     },
     date: 'SEP/OCT 2020',

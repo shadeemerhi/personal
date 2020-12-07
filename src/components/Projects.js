@@ -12,7 +12,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Projects() {
   const classes = useStyles();
 
-
   return (
     <Grid container className={classes.root}>
       {projects.map(project => {
