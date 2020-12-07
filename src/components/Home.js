@@ -1,6 +1,6 @@
 import { useState } from 'react';
 import SubNav from './SubNav';
-import { subLinks } from '../data/links';
+import { links } from '../data/links/homeNav';
 import About from './About';
 import Skills from './Skills';
 import { Route, Switch } from 'react-router-dom'; 
@@ -24,11 +24,11 @@ export default function Home() {
 
   return(
     <div className={classes.root}>
-      <SubNav subNavItem={subNavItem} setSubNavItem={setSubNavItem} links={subLinks}/>
+      <SubNav subNavItem={subNavItem} setSubNavItem={setSubNavItem} links={links}/>
       <Switch>
         <Route path='/skills' component={Skills}>
         </Route>
-        <Route path='/' component={() => <About textMain={subLinks[0].textMain} textSub={subLinks[0].textSub}/>}>
+        <Route path='/' component={() => <About textMain={links[0].textMain} textSub={links[0].textSub}/>}>
         </Route>
       </Switch>
     </div>
