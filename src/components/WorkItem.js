@@ -1,6 +1,7 @@
 import { Typography } from '@material-ui/core';
 import { makeStyles } from '@material-ui/core/styles';
 import WorkTaskItem from './WorkTaskItem';
+import WorkItemHeader from './WorkItemHeader';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -21,16 +22,12 @@ const useStyles = makeStyles((theme) => ({
 
 export default function WorkItem(props) {
 
-  console.log(props);
   const classes = useStyles();
   return(
     <div className={classes.root}>
       <div className={classes.main}>
         <div className={classes.info}>
-          <Typography>{props.company}</Typography>
-          <Typography>{props.title}</Typography>
-          <Typography>{props.date}</Typography>
-          <Typography>{props.location}</Typography>
+          <WorkItemHeader {...props}/>
         </div>
       </div>
       {props.items.map(item => {
