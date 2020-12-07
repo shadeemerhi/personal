@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row-reverse',
     justifyContent: 'flex-start',
     alignItems: 'center',
-    [theme.breakpoints.down('sm')]: {
+    [theme.breakpoints.down('md')]: {
       flexDirection: 'column',
     },
   },
@@ -59,10 +59,10 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '500px',
     maxHeight: '300px',
     [theme.breakpoints.down('sm')]: {
-      maxWidth: '400px'
+      maxWidth: '450px'
     },
     [theme.breakpoints.down('xs')]: {
-      maxWidth: '270px'
+      maxWidth: '330px'
     }
   },
 
@@ -72,14 +72,15 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('md')]: {
       flexDirection: 'column',
       alignItems: 'center',
-      width: '400px'
+      width: '430px'
     },
     [theme.breakpoints.down('xs')]: {
-      width: '290px'
+      width: '340px'
     }
   },
 
   description: {
+    fontWeight: '500',
     marginBottom: '1.5rem',
       [theme.breakpoints.down('md')]: {
         fontSize: '10pt'
@@ -128,10 +129,9 @@ const useStyles = makeStyles((theme) => ({
 
   stackText: {
     fontWeight: '900', 
-    fontSize: '12pt',
+    fontSize: '10pt',
     borderBottom: '1px solid #1db954',
     [theme.breakpoints.down('xs')]: {
-      fontSize: '8pt'
     },
   }
 }));

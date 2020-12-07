@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     border: '1px solid #b3b3b3',
     padding: '5px',
     borderRadius: '8px',
-    fontSize: '12pt',
+    fontSize: '10pt',
     fontWeight: '800',
     margin: '0.1rem 0.5rem 0.1rem 0.5rem',
     [theme.breakpoints.down('xs')]: {
