@@ -2,7 +2,7 @@ export const workExperiences = [
   {
     id: 1,
     company: 'HiOctave Media',
-    title: 'Founder and Creative Director',
+    title: 'Founder | Creative Director',
     date: 'Feb 2020 - Present',
     location: 'Calgary, AB',
     items: [
@@ -15,7 +15,7 @@ export const workExperiences = [
   {
     id: 2,
     company: 'MEG Energy',
-    title: 'Mechanical Engineering Student',
+    title: 'Mechanical Engineering Intern',
     date: 'Sep 2020 - Dec 2020',
     location: 'Calgary, AB',
     items: [
