@@ -11,9 +11,11 @@ const useStyles = makeStyles((theme) => ({
     background: '#121212',
     justifyContent: 'space-around',
     alignItems: 'center',
+    // minHeight: '100vh',
     [theme.breakpoints.up('sm')]: {
       flexDirection: 'column',
       justifyContent: 'flex-start',
+      minHeight: '100vh',
       height: '100%',
       // paddingTop: '50px',
     }
