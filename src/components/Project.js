@@ -123,7 +123,8 @@ const useStyles = makeStyles((theme) => ({
 
   itemContainer: {
     display: 'flex',
-    flexWrap: 'wrap'
+    flexWrap: 'wrap',
+    marginLeft: '0.7rem'
   },
   
 
