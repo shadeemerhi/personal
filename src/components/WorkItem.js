@@ -8,7 +8,8 @@ import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 const useStyles = makeStyles((theme) => ({
   root: {
     padding: '20px',
-    border: '1px solid #1db954',
+    transition: '0.1s ease-in-out',
+    border: play => play ? '1px solid #1db954' : '1px solid #b3b3b3',
     margin: '1rem 0rem 1rem 0rem',
     borderRadius: '20px'
   },
