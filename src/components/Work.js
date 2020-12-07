@@ -10,7 +10,6 @@ const useStyles = makeStyles((theme) => ({
 export default function Work() {
 
   const classes = useStyles();
-  console.log(workExperiences);
 
   return(
     <div className={classes.root}>
