@@ -46,16 +46,15 @@ const useStyles = makeStyles((theme) => ({
 
 }));
 
-export default function WorkItemHeader(props) {
+export default function EducationItemHeader(props) {
 
   const classes = useStyles();
 
   return(
     <div>
-      <Typography className={classes.company}>{props.company}</Typography>
-      <Typography className={classes.title}>{props.title}</Typography>
+      <Typography className={classes.company}>{props.school}</Typography>
+      <Typography className={classes.title}>{props.program}</Typography>
       <Typography className={classes.date}>{props.date}</Typography>
-      <Typography className={classes.location}>{props.location}</Typography>
     </div>
   )
 

@@ -65,7 +65,7 @@ export const workExperiences = [
   {
     id: 6,
     company: "The Ceili's Group",
-    title: 'Learning Assistant',
+    title: 'Assistant Manager',
     date: 'Sep 2018 - Apr 2019',
     location: 'Calgary, AB',
     items: [
