@@ -1,9 +1,9 @@
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
-import Nav from './components/Nav';
-import Home from './components/Home';
-import Projects from './components/Project/Projects';
-import Experience from './components/Experience';
+import Nav from './components/Nav/Nav';
+import Home from './components/Pages/Home/Home';
+import Projects from './components/Pages/Projects/Projects';
+import Experience from './components/Pages/Experience/Experience';
 import Header from './components/Header';
 
 export default function App() {

@@ -1,6 +1,6 @@
 import { useState } from 'react';
-import SubNav from './SubNav';
-import { links } from '../data/links/homeNav';
+import SubNav from '../../Nav/SubNav';
+import { links } from '../../../data/links/homeNav';
 import About from './About';
 import Skills from './Skills';
 import { Route, Switch } from 'react-router-dom'; 

@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import StackItem from '../StackItem';
+import StackItem from './StackItem';
 import { Typography } from '@material-ui/core';
 
 const useStyles = makeStyles((theme) => ({

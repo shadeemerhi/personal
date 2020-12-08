@@ -1,21 +1,21 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { workExperiences } from '../data/work'
-import WorkItem from './WorkItem';
+import { educationItems } from '../../../../data/education'
+import EducationItem from './EducationItem';
 
 const useStyles = makeStyles((theme) => ({
   root: {
   }
 }));
 
-export default function Work() {
+export default function Education() {
 
   const classes = useStyles();
 
   return(
     <div className={classes.root}>
-      {workExperiences.map(experience => {
+      {educationItems.map(item => {
         return (
-          <WorkItem {...experience}/>
+          <EducationItem {...item}/>
         )
       })}
     </div>

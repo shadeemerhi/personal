@@ -1,6 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { projects } from '../../data/projects';
-import Project from './Project';
+import { projects } from '../../../data/projects';
+import Project from './Project/Project';
 import Grid from '@material-ui/core/Grid'
 
 const useStyles = makeStyles((theme) => ({
