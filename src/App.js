@@ -2,7 +2,7 @@ import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Nav from './components/Nav';
 import Home from './components/Home';
-import Projects from './components/Projects';
+import Projects from './components/Project/Projects';
 import Experience from './components/Experience';
 import Header from './components/Header';
 

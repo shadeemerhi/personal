@@ -1,7 +1,7 @@
 // import { useState } from 'react';
 // import { makeStyles } from '@material-ui/core/styles';
 import { projects } from '../data/projects';
-import Project from './Project';
+import Project from './Project/Project';
 
 // const useStyles = makeStyles((theme) => ({
 //   root: {

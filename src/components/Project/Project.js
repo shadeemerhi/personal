@@ -1,8 +1,8 @@
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
-import Link from '@material-ui/core/Link';
-import { Typography } from '@material-ui/core';
 import ProjectInfo from './ProjectInfo';
+import ProjectImage from './ProjectImage';
+import ProjectTitle from './ProjectTitle';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -14,18 +14,7 @@ const useStyles = makeStyles((theme) => ({
       alignItems: 'center'
     }
   },
-  
-  link: {
-    textDecoration: 'none',
-    color: 'white',
-    borderBottom: '2px solid #1db954',
-    '&:visited': {
-      color: 'white'
-    },
-    '&:hover': {
-      textDecoration: 'none'
-    }
-  },
+
 
   titleContainer: {
     display: 'flex',
@@ -37,32 +26,6 @@ const useStyles = makeStyles((theme) => ({
       margin: '0',
       flexDirection: 'column',
     },
-  },
-
-  title: {
-    fontSize: '20pt',
-    fontWeight: '900'
-  },
-
-  date: {
-    fontSize: '7pt',
-    fontWeight: '900',
-    color: '#b3b3b3',
-    marginLeft: '1rem',
-    [theme.breakpoints.down('md')]: {
-      margin: '0',
-    },
-  },
-
-  image: {
-    maxWidth: '500px',
-    maxHeight: '300px',
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: '450px'
-    },
-    [theme.breakpoints.down('xs')]: {
-      maxWidth: '330px'
-    }
   },
 
   content: {
@@ -100,13 +63,14 @@ export default function Project(props) {
   return (
     <Grid item xs={12} className={classes.root}>
       <div className={classes.titleContainer}>
-        <Typography className={classes.date}>{props.date}</Typography>
-        <Link href={props.url} target="_blank" className={classes.link}>
-          <Typography className={classes.title}>{props.name}</Typography>
-        </Link>
+        <ProjectTitle 
+          date={props.date}
+          url={props.url}
+          name={props.name}
+        />
       </div>
       <div className={classes.content}>
-        <img src={`${process.env.PUBLIC_URL}/images/${props.image}`} className={classes.image} alt="project"/>
+        <ProjectImage image={props.image}/>
         <div className={classes.info}>
           <ProjectInfo {...props}/>
         </div>

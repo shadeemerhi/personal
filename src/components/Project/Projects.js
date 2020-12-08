@@ -1,5 +1,5 @@
 import { makeStyles } from '@material-ui/core/styles';
-import { projects } from '../data/projects';
+import { projects } from '../../data/projects';
 import Project from './Project';
 import Grid from '@material-ui/core/Grid'
 
