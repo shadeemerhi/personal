@@ -1,7 +1,6 @@
-import { useState } from 'react';
+// import { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import EducationItemHeader from './EducationItemHeader';
-import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -60,11 +59,9 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function EducationItem(props) {
-  
-  
-  const [play, setPlay] = useState(false);
 
-  const classes = useStyles(play);
+
+  const classes = useStyles();
   return(
     <div className={classes.root}>
       <div className={classes.main}>
