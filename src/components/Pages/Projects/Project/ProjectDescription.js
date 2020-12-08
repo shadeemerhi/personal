@@ -12,7 +12,7 @@ const useStyles = makeStyles((theme) => ({
       [theme.breakpoints.down('sm')]: {
         fontSize: '10pt'
       },
-    [theme.breakpoints.down('xs')]: {
+    [theme.breakpoints.down('sm')]: {
       margin: '1.5rem 0rem 1.5rem 0rem',
       fontSize: '10pt'
     }

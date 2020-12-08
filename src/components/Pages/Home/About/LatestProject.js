@@ -58,24 +58,54 @@ const useStyles = makeStyles((theme) => ({
     color: 'white',
     borderColor: "#1db954",
     transition: '0.2s ease-in-out',
+    marginRight: '0.5rem',
     '&:hover': {
       background: '#1db954'
     }
   },
 
   buttonText: {
+    fontSize: '10pt',
     [theme.breakpoints.down('md')]: {
-      fontSize: '10pt',
+      fontSize: '9pt',
 
     },
+  },
+
+  stackButton: {
+    fontFamily: 'proxima-nova, sans-serif',
+    fontWeight: '500',
+    borderRadius: '20px',
+    color: 'white',
+    background: stack => stack ? '#1db954' : 'none',
+    borderColor: "#1db954",
+    transition: '0.2s ease-in-out',
+    marginLeft: '0.5rem',
+    // marginBottom: '2rem',
+    '&:hover': {
+      background: stack => stack ? 'none' : '#1db954'
+      // background: '#1db954'
+    }
   },
 
 
   stackContainer: {
     display: 'flex',
+    justifyContent: 'center',
     width: '100%',
     [theme.breakpoints.down('md')]: {
       justifyContent: 'center',
+    },
+  },
+
+  toggleStackContainer: {
+    display: 'flex',
+    minWidth: '40%',
+    flexDirection: 'column',
+    alignItems: 'center',
+    margin: '1rem 0rem 1rem 0rem',
+    [theme.breakpoints.down('md')]: {
+      minWidth: '50%'
     },
   },
 
@@ -90,10 +120,9 @@ const useStyles = makeStyles((theme) => ({
   info: {
     display: 'flex',
     flexDirection: 'column',
-    // justifyContent: 'space-between',
-    padding: '0.2rem 1.5rem 1.5rem 1.5rem',
+    padding: '0.7rem 1.5rem 1.5rem 1.5rem',
     [theme.breakpoints.down('md')]: {
-      padding: '0.1rem 0.8rem 0.8rem 0.8rem',
+      padding: '0.5rem 0.8rem 0.8rem 0.8rem',
     },
   },
 
@@ -116,8 +145,10 @@ export default function LatestProject(props) {
 
   const latestProject = projects[0];
 
+  const [stack, setStack] = useState(false);
 
-  const classes = useStyles();
+
+  const classes = useStyles(stack);
 
   return(
     <Grid item xs={12} className={classes.root}>
@@ -134,8 +165,19 @@ export default function LatestProject(props) {
           <ProjectDescription description={latestProject.description}/>
           <div className={classes.btnContainer}>
             <Button variant="outlined" className={classes.button} href="https://github.com/shadeemerhi/simplifix" target="_blank">
-              <Typography className={classes.buttonText}>REPOSITORY</Typography>
+              <Typography className={classes.buttonText}>SOURCE CODE</Typography>
             </Button>
+            {!stack &&
+          <Button variant="outlined" className={classes.stackButton} onClick={() => setStack(!stack)}>
+          <Typography className={classes.buttonText}>VIEW STACK</Typography>
+          </Button>
+          }
+          {stack &&
+            <Button variant="outlined" className={classes.stackButton} onClick={() => setStack(!stack)}>
+            <Typography className={classes.buttonText}>CLOSE STACK</Typography>
+          </Button>
+          }
+            
             <Link to='/projects' className={classes.link}> 
               {/* <Button variant="outlined" className={classes.button} href="https://github.com/shadeemerhi">
               <Typography className={classes.buttonText}>MORE PROJECTS</Typography>
@@ -145,7 +187,19 @@ export default function LatestProject(props) {
         </div>
       </div>
       <div className={classes.stackContainer}>
-        <Stack className={classes.stack} {...latestProject.stack}/>
+        <div className={classes.toggleStackContainer}>
+          {/* {!stack &&
+          <Button variant="outlined" className={classes.button} onClick={() => setStack(!stack)}>
+          <Typography className={classes.buttonText}>VIEW STACK</Typography>
+          </Button>
+          }
+          {stack &&
+            <Button variant="outlined" className={classes.stackButton} onClick={() => setStack(!stack)}>
+            <Typography className={classes.buttonText}>CLOSE STACK</Typography>
+          </Button>
+          } */}
+          {stack && <Stack className={classes.stack} {...latestProject.stack}/>}
+        </div>
       </div>
     </Grid>
   )
