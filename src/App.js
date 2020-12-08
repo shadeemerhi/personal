@@ -5,6 +5,7 @@ import Home from './components/Pages/Home/Home';
 import Projects from './components/Pages/Projects/Projects';
 import Experience from './components/Pages/Experience/Experience';
 import Header from './components/Header';
+import ScrollToTop from './components/ScrollToTop';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -25,7 +26,8 @@ export default function App() {
 
   return(
     <Router>
-      <Grid container >
+      <ScrollToTop />
+      <Grid container>
         <Grid item xs={12} sm={3}>
           <Nav /> 
         </Grid>
