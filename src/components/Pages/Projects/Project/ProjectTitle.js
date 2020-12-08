@@ -27,7 +27,7 @@ const useStyles = makeStyles((theme) => ({
     fontWeight: '900',
     color: '#b3b3b3',
     marginLeft: '1rem',
-    [theme.breakpoints.down('md')]: {
+    [theme.breakpoints.down('sm')]: {
       margin: '0',
     },
   },

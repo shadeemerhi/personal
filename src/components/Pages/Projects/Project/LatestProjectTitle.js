@@ -18,7 +18,7 @@ const useStyles = makeStyles((theme) => ({
   },
 
   title: {
-    fontSize: '20pt',
+    fontSize: '16pt',
     fontWeight: '900'
   },
 

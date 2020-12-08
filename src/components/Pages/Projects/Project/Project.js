@@ -1,11 +1,12 @@
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import ProjectImage from '../../Projects/Project/ProjectImage';
-import LatestProjectTitle from '../../Projects/Project/LatestProjectTitle';
+// import LatestProjectTitle from '../../Projects/Project/LatestProjectTitle';
 import ProjectDescription from '../../Projects/Project/ProjectDescription';
 import Stack from '../../Projects/Project/Stack';
 import Button from '@material-ui/core/Button';
 import Typography from '@material-ui/core/Typography';
+import ProjectTitle from './ProjectTitle';
 
 
 const useStyles = makeStyles((theme) => ({
@@ -150,7 +151,7 @@ export default function ProjectNew(props) {
   return(
     <Grid item xs={12} className={classes.root}>
       <div className={classes.titleContainer}>
-        <LatestProjectTitle 
+        <ProjectTitle 
           date={props.date}
           url={props.url}
           name={props.name}
