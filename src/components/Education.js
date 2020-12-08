@@ -1,4 +1,6 @@
 import { makeStyles } from '@material-ui/core/styles';
+import { educationItems } from '../data/education'
+import EducationItem from './EducationItem';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -11,7 +13,11 @@ export default function Education() {
 
   return(
     <div className={classes.root}>
-      <p>Education</p>
+      {educationItems.map(item => {
+        return (
+          <EducationItem {...item}/>
+        )
+      })}
     </div>
   )
 }
