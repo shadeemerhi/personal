@@ -9,7 +9,14 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'column',
     padding: '10px',
     border: '1px solid #1db954',
-    borderRadius: '20px'
+    borderRadius: '20px',
+    width: '500px',
+    [theme.breakpoints.down('sm')]: {
+      width: '400px'
+    },
+    [theme.breakpoints.down('xs')]: {
+      width: '290px'
+    },
   },
 
   singleStackContainer: {

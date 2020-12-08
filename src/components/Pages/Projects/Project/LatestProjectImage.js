@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
     maxWidth: '500px',
     // maxHeight: '300px',
     [theme.breakpoints.down('md')]: {
-      maxWidth: '350px'
+      maxWidth: '400px'
     },
     [theme.breakpoints.down('xs')]: {
       maxWidth: '330px'

@@ -4,9 +4,9 @@ const useStyles = makeStyles((theme) => ({
 
   image: {
     maxWidth: '500px',
-    maxHeight: '300px',
-    [theme.breakpoints.down('sm')]: {
-      maxWidth: '450px'
+    // maxHeight: '300px',
+    [theme.breakpoints.down('md')]: {
+      maxWidth: '400px'
     },
     [theme.breakpoints.down('xs')]: {
       maxWidth: '330px'

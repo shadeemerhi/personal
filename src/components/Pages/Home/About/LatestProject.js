@@ -2,7 +2,7 @@ import { useState } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import Grid from '@material-ui/core/Grid';
 import { projects } from '../../../../data/projects';
-import LatestProjectImage from '../../Projects/Project/LatestProjectImage';
+import ProjectImage from '../../Projects/Project/ProjectImage';
 import LatestProjectTitle from '../../Projects/Project/LatestProjectTitle';
 import ProjectDescription from '../../Projects/Project/ProjectDescription';
 import Stack from '../../Projects/Project/Stack';
@@ -163,7 +163,7 @@ export default function LatestProject(props) {
         />
       </div>
       <div className={classes.imageText}>
-        <LatestProjectImage image={latestProject.image} className={classes.image}/>
+        <ProjectImage image={latestProject.image} className={classes.image}/>
         <div className={classes.info}>
           <ProjectDescription description={latestProject.description}/>
           <div className={classes.btnContainer}>
