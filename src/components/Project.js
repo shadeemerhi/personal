@@ -154,7 +154,7 @@ export default function Project(props) {
         </Link>
       </div>
       <div className={classes.content}>
-        <img src={`${process.env.PUBLIC_URL}/images/${props.image}`} className={classes.image} alt="missing"/>
+        <img src={`${process.env.PUBLIC_URL}/images/${props.image}`} className={classes.image} alt="project"/>
         <div className={classes.info}>
           <Typography className={classes.description}>{props.description}</Typography>
           <div>
