@@ -1,15 +1,15 @@
-import { makeStyles } from '@material-ui/core/styles';
+// import { makeStyles } from '@material-ui/core/styles';
 import LatestProject from './LatestProject';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-  }
-}));
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//   }
+// }));
 
 
 export default function About(props) {
 
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return(
     <div>
