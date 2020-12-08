@@ -6,12 +6,14 @@ const useStyles = makeStyles((theme) => ({
   root: {
     padding: '20px',
     transition: '0.2s ease-in-out',
-    border: play => play ? '1px solid #1db954' : '1px solid #b3b3b3',
+    // border: play => play ? '1px solid #1db954' : '1px solid #b3b3b3',
+    border: '1px solid #b3b3b3',
     margin: '1rem 0rem 1rem 0rem',
     borderRadius: '20px',
     '&:hover': {
+      border: '1px solid white'
       // border: '1px solid white'
-      border: play => play ? '1px solid #1db954' : '1px solid white'
+      // border: play => play ? '1px solid #1db954' : '1px solid white'
     }
   },
 
