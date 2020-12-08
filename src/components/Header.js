@@ -9,7 +9,7 @@ import EmailIcon from '@material-ui/icons/Email';
 
 const useStyles = makeStyles((theme) => ({
   root: {
-    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(33, 33, 33, 1)), url(${process.env.PUBLIC_URL}/images/test.jpg)`,
+    backgroundImage: `linear-gradient(to bottom, rgba(0, 0, 0, 0), rgba(33, 33, 33, 1)), url(${process.env.PUBLIC_URL}/images/test4.jpg)`,
     backgroundSize: 'cover',
     height: '260px',
     position: 'relative',
