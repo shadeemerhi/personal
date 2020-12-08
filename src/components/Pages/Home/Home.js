@@ -1,7 +1,7 @@
 import { useState } from 'react';
 import SubNav from '../../Nav/SubNav';
 import { links } from '../../../data/links/homeNav';
-import About from './About';
+import About from './About/About';
 import Skills from './Skills';
 import { Route, Switch } from 'react-router-dom'; 
 import { makeStyles } from '@material-ui/core/styles';
