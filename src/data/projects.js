@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 1,
     name: 'Simplifix',
-    description: "A full-stack application where users can find and hire freelance contractors for labor-based work by browsing through posted 'gigs' as well as post their own gigs to gain clients if they possess skills in a particular area. The platform manages all bookings and payments, and allows for live messaging between clients and contractors.",
+    description: "A full-stack application where users can find and hire freelance contractors for labor-based work by browsing through posted 'gigs' as well as post their own gigs if they possess skills in a particular area. The platform manages all bookings and payments, and allows for live messaging between clients and contractors.",
     image: 'simplifix.png',
     stack: {
       front: ['React', 'Material UI'],
