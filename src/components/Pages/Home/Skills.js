@@ -7,7 +7,6 @@ import StackItem from '../Projects/Project/StackItem';
 const useStyles = makeStyles((theme) => ({
   root: {
     display: 'flex',
-    // flexDirection: 'column'
   },
 
   name: {
@@ -28,6 +27,9 @@ const useStyles = makeStyles((theme) => ({
     display: 'flex',
     alignItems: 'center',
     margin: '1rem 0rem 1rem 0rem',
+    borderRadius: '20px',
+    padding: '10px',
+    transition: '0.2s ease-in-out',
     [theme.breakpoints.down('sm')]: {
       flexDirection: 'column', 
     },
