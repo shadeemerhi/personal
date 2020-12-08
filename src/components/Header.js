@@ -121,7 +121,7 @@ export default function Header() {
     <div className={classes.root}>
       <div className={classes.overlay}>
         <div className={classes.labelContainer}>
-          <Typography className={classes.label}>DEVELOPER</Typography>
+          <Typography className={classes.label}>FULL STACK DEVELOPER</Typography>
           <CheckCircleIcon style={{color: '#147efb'}}/>
         </div>
         <Typography className={classes.name}>Shadee Merhi</Typography>
