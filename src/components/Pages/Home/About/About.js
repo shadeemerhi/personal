@@ -6,7 +6,7 @@ const useStyles = makeStyles((theme) => ({
   text: {
     fontSize: '14pt',
     fontWeight: '900',
-    marginTop: '1rem'
+    margin: '1rem 0rem 1rem 0rem'
   }
 }));
 
@@ -20,9 +20,9 @@ export default function About(props) {
       <Typography className={classes.text}>Latest Release</Typography>
       <LatestProject />
       <Typography className={classes.text}>Mini Bio</Typography>
-      <p>{props.textMain}</p>
+      <Typography>{props.textMain}</Typography>
       <br/>
-      <p>{props.textSub}</p>
+      <Typography>{props.textSub}</Typography>
     </div>
   )
 }
