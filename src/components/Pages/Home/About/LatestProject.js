@@ -124,6 +124,9 @@ const useStyles = makeStyles((theme) => ({
     [theme.breakpoints.down('md')]: {
       padding: '0.5rem 0.8rem 0.8rem 0.8rem',
     },
+    [theme.breakpoints.down('xs')]: {
+      padding: '0rem 1rem 1rem 1rem'
+    },
   },
 
   image: {
@@ -177,27 +180,13 @@ export default function LatestProject(props) {
             <Typography className={classes.buttonText}>CLOSE STACK</Typography>
           </Button>
           }
-            
-            <Link to='/projects' className={classes.link}> 
-              {/* <Button variant="outlined" className={classes.button} href="https://github.com/shadeemerhi">
-              <Typography className={classes.buttonText}>MORE PROJECTS</Typography>
-              </Button> */}
-            </Link>
+          <Link to='/projects' className={classes.link}> 
+          </Link>
           </div>
         </div>
       </div>
       <div className={classes.stackContainer}>
         <div className={classes.toggleStackContainer}>
-          {/* {!stack &&
-          <Button variant="outlined" className={classes.button} onClick={() => setStack(!stack)}>
-          <Typography className={classes.buttonText}>VIEW STACK</Typography>
-          </Button>
-          }
-          {stack &&
-            <Button variant="outlined" className={classes.stackButton} onClick={() => setStack(!stack)}>
-            <Typography className={classes.buttonText}>CLOSE STACK</Typography>
-          </Button>
-          } */}
           {stack && <Stack className={classes.stack} {...latestProject.stack}/>}
         </div>
       </div>
