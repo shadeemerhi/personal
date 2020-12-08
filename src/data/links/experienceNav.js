@@ -9,9 +9,9 @@ export const links = [
     name: 'EDUCATION',
     url: '/experience/education',
   },
-  {
-    id: 3,
-    name: 'VOLUNTEER',
-    url: '/experience/volunteer',
-  },
+  // {
+  //   id: 3,
+  //   name: 'VOLUNTEER',
+  //   url: '/experience/volunteer',
+  // },
 ]
