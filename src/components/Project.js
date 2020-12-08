@@ -3,6 +3,7 @@ import Grid from '@material-ui/core/Grid';
 import Link from '@material-ui/core/Link';
 import StackItem from './StackItem';
 import { Typography } from '@material-ui/core';
+import ProjectInfo from './ProjectInfo';
 // import test from '../data/images/simplifix.png';
 
 // const images = require.context('../../public/images', true);
@@ -156,64 +157,7 @@ export default function Project(props) {
       <div className={classes.content}>
         <img src={`${process.env.PUBLIC_URL}/images/${props.image}`} className={classes.image} alt="project"/>
         <div className={classes.info}>
-          <Typography className={classes.description}>{props.description}</Typography>
-          <div>
-            <div style={{display: 'flex', justifyContent: 'center'}}>
-              <Typography className={classes.stackText} style={{borderBottom: 'none'}}>STACK</Typography>  
-            </div>
-            <div className={classes.stackContainer}>
-              {props.stack.front.length !== 0 &&
-              <div className={classes.singleStackContainer}>
-              <Typography className={classes.stackText}>FRONT:</Typography>
-                <div className={classes.itemContainer}>
-                  {props.stack.front.map(item => {
-                    return <StackItem item={item}/>
-                  })}
-                </div>
-              </div>
-              }
-              {props.stack.back.length !== 0 &&
-              <div className={classes.singleStackContainer}>
-              <Typography className={classes.stackText}>BACK:</Typography>
-                <div className={classes.itemContainer}>
-                  {props.stack.back.map(item => {
-                    return <StackItem item={item}/>
-                  })}
-                </div>
-              </div>
-              }
-              {props.stack.deployment.length !== 0 &&
-              <div className={classes.singleStackContainer}>
-                <Typography className={classes.stackText}>DEPLOY:</Typography>
-                <div className={classes.itemContainer}>
-                    {props.stack.deployment.map(item => {
-                    return <StackItem item={item}/>
-                  })}
-                </div>
-              </div>
-              }
-              {props.stack.test.length !== 0 &&
-              <div className={classes.singleStackContainer}>
-                <Typography className={classes.stackText}>TEST:</Typography>
-                <div className={classes.itemContainer}>
-                    {props.stack.test.map(item => {
-                    return <StackItem item={item}/>
-                  })}
-                </div>
-              </div>
-              }
-              {props.stack.other.length !== 0 &&
-              <div className={classes.singleStackContainer}>
-                <Typography className={classes.stackText}>OTHER:</Typography>
-                <div className={classes.itemContainer}>
-                    {props.stack.other.map(item => {
-                    return <StackItem item={item}/>
-                  })}
-                </div>
-              </div>
-              }
-            </div>
-          </div>
+          <ProjectInfo {...props}/>
         </div>
       </div>
     </Grid>
