@@ -35,7 +35,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function ProjectInfo(props) {
+export default function Stack(props) {
 
   const classes = useStyles();
 

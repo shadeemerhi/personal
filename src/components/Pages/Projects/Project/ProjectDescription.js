@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function ProjectInfo(props) {
+export default function ProjectDescription(props) {
 
   const classes = useStyles();
 
