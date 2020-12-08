@@ -1,8 +1,9 @@
-import { useState } from 'react';
+import { useState, useEffect } from 'react';
 import { makeStyles } from '@material-ui/core/styles';
 import WorkTaskItem from './WorkTaskItem';
 import WorkItemHeader from './WorkItemHeader';
 import PlayCircleOutlineIcon from '@material-ui/icons/PlayCircleOutline';
+import PauseCircleOutlineIcon from '@material-ui/icons/PauseCircleOutline';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -51,15 +52,25 @@ const useStyles = makeStyles((theme) => ({
 
 export default function WorkItem(props) {
   
-  
+  // console.log(props);
   const [play, setPlay] = useState(false);
 
+  useEffect(() => {
+    if(props.id === 1) {
+      setPlay(true)
+    }
+  },[props.id])
+
+
+
   const classes = useStyles(play);
+
   return(
     <div className={classes.root}>
       <div className={classes.main}>
         <div className={classes.info}>
-          <PlayCircleOutlineIcon className={classes.playBtn} onClick={() => setPlay(!play)}/>
+          {!play && <PlayCircleOutlineIcon className={classes.playBtn} onClick={() => setPlay(!play)}/>}
+          {play && <PauseCircleOutlineIcon className={classes.playBtn} onClick={() => setPlay(!play)}/>}
           <WorkItemHeader {...props}/>
         </div>
       </div>

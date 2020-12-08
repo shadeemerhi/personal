@@ -1,12 +1,12 @@
-import { useState } from 'react';
-import { makeStyles } from '@material-ui/core/styles';
+// import { useState } from 'react';
+// import { makeStyles } from '@material-ui/core/styles';
 import { projects } from '../data/projects';
 import Project from './Project';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-  }
-}));
+// const useStyles = makeStyles((theme) => ({
+//   root: {
+//   }
+// }));
 
 
 export default function About(props) {
@@ -14,7 +14,7 @@ export default function About(props) {
   const latestProject = projects[0];
 
 
-  const classes = useStyles();
+  // const classes = useStyles();
 
   return(
     <div>
