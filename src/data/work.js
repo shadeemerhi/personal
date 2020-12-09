@@ -66,7 +66,7 @@ export const workExperiences = [
     id: 6,
     company: "The Ceili's Group",
     title: 'Assistant Manager',
-    date: 'Sep 2018 - Apr 2019',
+    date: 'May 2016 - Sep 2017',
     location: 'Calgary, AB',
     items: [
       "The youngest employee to take on a leadership role (after promotion) at the establishment",
