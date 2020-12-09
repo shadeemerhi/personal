@@ -21,4 +21,10 @@ export const links = [
     url: '/experience',
     icon: WorkOutlineIcon
   },
+  {
+    id: 4,
+    name: 'Contact',
+    url: '/contact',
+    icon: WorkOutlineIcon
+  },
 ]
