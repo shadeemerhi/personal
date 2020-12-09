@@ -3,6 +3,7 @@ import SubNav from '../../Nav/SubNav';
 import { links } from '../../../data/links/homeNav';
 import About from './About/About';
 import Skills from './Skills';
+import Contact from './Contact';
 import { Route, Switch } from 'react-router-dom'; 
 import { makeStyles } from '@material-ui/core/styles';
 
@@ -27,6 +28,8 @@ export default function Home() {
       <SubNav subNavItem={subNavItem} setSubNavItem={setSubNavItem} links={links}/>
       <Switch>
         <Route path='/skills' component={Skills}>
+        </Route>
+        <Route path='/contact' component={Contact}>
         </Route>
         <Route path='/' component={() => <About textMain={links[0].textMain} textSub={links[0].textSub}/>}>
         </Route>

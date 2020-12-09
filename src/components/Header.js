@@ -23,7 +23,6 @@ const useStyles = makeStyles((theme) => ({
     position: 'absolute',
     bottom: '0px',
     left: '15px',
-    // border: '2px solid red',
     [theme.breakpoints.up('md')]: {
       fontSize: '44pt',
       left: '25px',
