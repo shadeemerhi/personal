@@ -1,6 +1,7 @@
 import HomeIcon from "@material-ui/icons/Home";
 import CodeIcon from '@material-ui/icons/Code';
 import WorkOutlineIcon from '@material-ui/icons/WorkOutline';
+import AlternateEmailIcon from '@material-ui/icons/AlternateEmail';
 
 export const links = [
   {
@@ -25,6 +26,6 @@ export const links = [
     id: 4,
     name: 'Contact',
     url: '/contact',
-    icon: WorkOutlineIcon
+    icon: AlternateEmailIcon
   },
 ]
