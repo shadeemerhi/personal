@@ -6,6 +6,7 @@ import Projects from './components/Pages/Projects/Projects';
 import Experience from './components/Pages/Experience/Experience';
 import Header from './components/Header';
 import ScrollToTop from './components/ScrollToTop';
+import Contact from './components/Pages/Home/Contact';
 import { makeStyles } from '@material-ui/core/styles';
 
 const useStyles = makeStyles((theme) => ({
@@ -37,6 +38,7 @@ export default function App() {
             <Route path="/projects" component={Projects}/>
             <Route path="/experience" component={Experience}/>
             <Route path="/experience"/>
+            <Route path='/contact' component={Contact} />
             <Route path="/" component={Home}/>
           </Switch>
         </Grid>

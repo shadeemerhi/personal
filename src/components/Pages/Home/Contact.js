@@ -8,6 +8,12 @@ import Link from '@material-ui/core/Link';
 
 const useStyles = makeStyles((theme) => ({
   root: {
+    display : 'flex',
+    flexDirection: 'column',
+    padding: '25px',
+  },
+
+  main: {
     display: 'flex',
     flexDirection: 'column',
     width: '0%',
@@ -35,7 +41,13 @@ const useStyles = makeStyles((theme) => ({
 
   text: {
     fontWeight: '500',
-    marginLeft: '1rem'
+    marginLeft: '0.8rem'
+  },
+
+  title: {
+    fontWeight: '900',
+    width: '75px',
+    borderBottom: '2px solid #1db954',
   },
 
   icon: {
@@ -50,24 +62,27 @@ export default function Contact(props) {
 
   return(
     <div className={classes.root}>
-      <Link href={`mailto: ${contactInfo[0].value}`} target="_blank" className={classes.link}>
-        <div className={classes.itemContainer}>
-          <EmailIcon className={classes.icon}/>
-          <Typography className={classes.text}>{contactInfo[0].value}</Typography>
-        </div>
-      </Link>
-      <Link href={contactInfo[1].value} target="_blank" className={classes.link}>
-        <div className={classes.itemContainer}>
-          <LinkedInIcon className={classes.icon}/>
-          <Typography className={classes.text}>LinkedIn</Typography>
-        </div>
-      </Link>
-      <Link href={contactInfo[2].value} target="_blank" className={classes.link}>
-        <div className={classes.itemContainer}>
-          <GitHubIcon className={classes.icon}/>
-          <Typography className={classes.text}>GitHub</Typography>
-        </div>
-      </Link>
+      <Typography className={classes.title}>CONTACT</Typography>
+      <div className={classes.main}>
+        <Link href={`mailto: ${contactInfo[0].value}`} target="_blank" className={classes.link}>
+          <div className={classes.itemContainer}>
+            <EmailIcon className={classes.icon}/>
+            <Typography className={classes.text}>{contactInfo[0].value}</Typography>
+          </div>
+        </Link>
+        <Link href={contactInfo[1].value} target="_blank" className={classes.link}>
+          <div className={classes.itemContainer}>
+            <LinkedInIcon className={classes.icon}/>
+            <Typography className={classes.text}>LinkedIn</Typography>
+          </div>
+        </Link>
+        <Link href={contactInfo[2].value} target="_blank" className={classes.link}>
+          <div className={classes.itemContainer}>
+            <GitHubIcon className={classes.icon}/>
+            <Typography className={classes.text}>GitHub</Typography>
+          </div>
+        </Link>
+      </div>
     </div>
   )
 }
