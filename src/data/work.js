@@ -2,7 +2,7 @@ export const workExperiences = [
   {
     id: 1,
     company: 'HiOctave Media',
-    title: 'Founder | Creative Director',
+    title: 'Founder | Front-end Developer | Creative Director',
     date: 'Feb 2020 - Present',
     location: 'Calgary, AB',
     items: [
