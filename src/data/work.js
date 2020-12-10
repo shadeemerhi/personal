@@ -17,7 +17,7 @@ export const workExperiences = [
     id: 2,
     company: 'MEG Energy',
     title: 'Mechanical Engineering Intern',
-    date: 'Sep 2020 - Dec 2020',
+    date: 'Sep 2019 - Dec 2019',
     location: 'Calgary, AB',
     items: [
       "Assisted senior engineers in analyzing mechanical diagrams such as P&ID's, ISO's and General Assemblies to create inspection plans for static and rotating equipment and facility pipelines",
