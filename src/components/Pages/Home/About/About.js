@@ -17,12 +17,13 @@ export default function About(props) {
 
   return(
     <div>
-      <Typography className={classes.text}>Latest Release</Typography>
-      <LatestProject />
       <Typography className={classes.text}>Mini Bio</Typography>
       <Typography>{props.textMain}</Typography>
       <br/>
       <Typography>{props.textSub}</Typography>
+      <br/>
+      <Typography className={classes.text}>Latest Release</Typography>
+      <LatestProject />
     </div>
   )
 }
