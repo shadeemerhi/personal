@@ -14,11 +14,14 @@ const useStyles = makeStyles((theme) => ({
 export default function About(props) {
 
   const classes = useStyles();
+  console.log(props.textInspo);
 
   return(
     <div>
       <Typography className={classes.text}>Mini Bio</Typography>
       <Typography>{props.textMain}</Typography>
+      <br/>
+      <Typography>{props.textInspo}</Typography>
       <br/>
       <Typography>{props.textSub}</Typography>
       <br/>

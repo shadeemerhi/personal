@@ -20,7 +20,7 @@ const useStyles = makeStyles((theme) => ({
 export default function Home() {
 
   const classes = useStyles();
-  const [subNavItem, setSubNavItem] = useState('ABOUT')
+  const [subNavItem, setSubNavItem] = useState('ABOUT');
 
   return(
     <div className={classes.root}>
@@ -28,7 +28,7 @@ export default function Home() {
       <Switch>
         <Route path='/skills' component={Skills}>
         </Route>
-        <Route path='/' component={() => <About textMain={links[0].textMain} textSub={links[0].textSub}/>}>
+        <Route path='/' component={() => <About {...links[0]}/>}>
         </Route>
       </Switch>
     </div>
