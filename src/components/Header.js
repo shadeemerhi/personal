@@ -14,7 +14,7 @@ const useStyles = makeStyles((theme) => ({
     height: '260px',
     position: 'relative',
     [theme.breakpoints.up('sm')]: {
-      height: '350px'
+      height: '440px'
     },
   },
 
