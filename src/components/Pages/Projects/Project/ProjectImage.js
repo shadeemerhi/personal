@@ -1,5 +1,4 @@
 import { makeStyles } from '@material-ui/core/styles';
-import ProgressiveImage from 'react-progressive-graceful-image';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -19,16 +18,8 @@ const useStyles = makeStyles((theme) => ({
 export default function ProjectImage(props) {
   
   const classes = useStyles();
-  const placeholder = (
-    <div className={classes.image} style={{background: 'grey'}}
-    />
-  )
 
   return (
-    <ProgressiveImage src={`${process.env.PUBLIC_URL}/images/${props.image}`} className={classes.image} placeholder="">
-      {(src, loading) => {
-        return loading ? placeholder : <img src={`${process.env.PUBLIC_URL}/images/${props.image}`} className={classes.image} alt="project"/>
-      }}
-    </ProgressiveImage>
+    <img src={`${process.env.PUBLIC_URL}/images/${props.image}`} className={classes.image} alt="project"/>
   )
 }
