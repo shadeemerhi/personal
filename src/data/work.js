@@ -6,9 +6,8 @@ export const workExperiences = [
     date: 'Feb 2020 - Present',
     location: 'Calgary, AB',
     items: [
-      'Provide custom website development and digital marketing services to small businesses',
-      'Primarily utilize JavaScript, HTML5, CSS/SASS, and Webflow, while progressively introducing React and Material UI into projects',
-      'Grew team to 3 employees that currently service 5 clients on an on-going basis',
+      'Provide custom website development and digital marketing services to small businesses primarily using JavaScript, SASS, HTML5, and Webflow while progressively introducing React and Material UI into projects',
+      'Grew team to 3 employees and 5 clients that are serviced on an on-going basis; clients include restaurants, entertainment facilities, shopping centres, and professional service firms',
       'Create marketing content to display on client websites and their social media platforms',
       'Content creation includes: graphic design, photography, and videography',
     ]
