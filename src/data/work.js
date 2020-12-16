@@ -2,14 +2,15 @@ export const workExperiences = [
   {
     id: 1,
     company: 'HiOctave Media',
-    title: 'Front-end Developer | Creative Director',
+    title: 'Frontend Developer | Creative Director',
     date: 'Feb 2020 - Present',
     location: 'Calgary, AB',
     items: [
-      'Provide custom website development and digital marketing services to small businesses primarily using JavaScript, SASS, HTML5, and Webflow while progressively introducing React and Material UI into projects',
-      'Grew team to 3 employees and 5 clients that are serviced on an on-going basis; clients include restaurants, entertainment facilities, shopping centres, and professional service firms',
-      'Create marketing content to display on client websites and their social media platforms',
-      'Content creation includes: graphic design, photography, and videography',
+      'Design and develop custom websites and provide digital marketing services for small businesses primarily usingJavaScript, SASS, HTML5, and Webflow while progressively introducing React and Material UI into projects',
+      'Completed 6 website/marketing projects while managing up to 3 outsourced subcontractorss',
+      'Achieved growth of 1000+ organic social media followers and a 30% increase in website traffic and sales for clients',
+      'Facilitate all client communications which includes sales, consultation meetings, and client satisfaction',
+      'Marketing content creation includes: graphic design, photography, and videography',
     ]
   },
   {
@@ -32,9 +33,9 @@ export const workExperiences = [
     date: 'May 2019 - Aug 2019',
     location: 'Calgary, AB',
     items: [
-      "Worked under senior mechanical and chemical engineers primarily on the TC Energy Methane Reduction Project",
+      "Worked with senior engineers on the TC Energy Methane Reduction project which reduced asset emissions by 40%",
       "Analyzed 200+ client P&ID's, ISO's, and GA's to identify group piping assemblies that contributed to natural gas leaks to create database-ready data containing technical specifications required to calculate total emissions from each asset",
-      "Trained incoming cohort of interns in project specifications and standards to ensure a smooth intern turnover",
+      "Chosen to train an incoming cohort of interns in project specifications and standards to ensure a smooth turnover",
     ]
   },
   {
