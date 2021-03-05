@@ -167,7 +167,7 @@ export default function LatestProject(props) {
         <div className={classes.info}>
           <ProjectDescription description={latestProject.description}/>
           <div className={classes.btnContainer}>
-            <Button variant="outlined" className={classes.button} href="https://github.com/shadeemerhi/simplifix" target="_blank">
+            <Button variant="outlined" className={classes.button} href={latestProject.url} target="_blank">
               <Typography className={classes.buttonText}>SOURCE CODE</Typography>
             </Button>
             {!stack &&
