@@ -1,5 +1,20 @@
 export const projects = [
   {
+    id: 7,
+    name: 'UniChat',
+    description: "A real-time chat and tutoring application to be used by UCalgary Engineering students.",
+    image: 'unichat.png',
+    stack: {
+      front: ['React', 'TypeScript', 'Material UI'],
+      back: ['Node.js', 'Express', 'PostgreSQL', 'Socket IO'],
+      deployment: [],
+      test: ['Cypress'],
+      other: []
+    },
+    date: 'NOV/DEC 2020',
+    url: 'https://github.com/shadeemerhi/unichat'
+  },
+  {
     id: 1,
     name: 'Simplifix',
     description: "A full-stack application where users can find and hire freelance contractors for labor-based work by browsing through posted 'gigs' as well as post their own gigs if they possess skills in a particular area. The platform manages all bookings and payments, and allows for live messaging between clients and contractors.",
