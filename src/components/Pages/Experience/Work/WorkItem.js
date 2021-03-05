@@ -51,18 +51,8 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 export default function WorkItem(props) {
-  
-  // console.log(props);
-  const [play, setPlay] = useState(false);
 
-  useEffect(() => {
-    if(props.id === 1) {
-      setPlay(true)
-    }
-  },[props.id])
-
-
-
+  const [play, setPlay] = useState(props.play);
   const classes = useStyles(play);
 
   return(

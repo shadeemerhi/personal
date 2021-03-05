@@ -13,9 +13,9 @@ export default function Work() {
 
   return(
     <div className={classes.root}>
-      {workExperiences.map(experience => {
+      {workExperiences.map((experience, index) => {
         return (
-          <WorkItem {...experience}/>
+          <WorkItem {...experience} play={index === 0}/>
         )
       })}
     </div>
