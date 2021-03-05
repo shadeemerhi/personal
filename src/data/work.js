@@ -1,5 +1,28 @@
 export const workExperiences = [
   {
+    id: 7,
+    company: 'UniChat',
+    title: 'Full Stack Developer | Project Lead',
+    date: 'December 2020 - Present',
+    location: 'Remote',
+    items: [
+      'Leading a team of 3 developers of a chat and tutoring application to be used by UCalgary Engineering Students',
+      'Responsible for the full functionality of the real-time chat and authentication system, consisting of 30+ React components combined with Node.js, Socket IO, and Firebase backend logic',
+      "Designed ERD's, implemented them using PostgreSQL, and have developed 7 API endpoints in Node.js"
+    ]
+  },
+  {
+    id: 8,
+    company: 'Lighthouse Labs',
+    title: 'Project Evaluator',
+    date: 'February 2021 - Present',
+    location: 'Remote',
+    items: [
+      'Perform 10 in-depth code reviews per month of Full Stack projects completed by students and provide a detailed report providing  constructive feedback in areas including version control, code quality, and solution techniques',
+      'Project stacks include React, Node.js, Express, PostgreSQL, jQuery, HTML, CSS'
+    ]
+  },
+  {
     id: 1,
     company: 'HiOctave Media',
     title: 'Frontend Developer | Creative Director',
