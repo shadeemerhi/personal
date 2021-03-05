@@ -2,7 +2,7 @@ export const projects = [
   {
     id: 7,
     name: 'UniChat',
-    description: "A real-time chat and tutoring application to be used by UCalgary Engineering students.",
+    description: "A real-time chat and tutoring application to be used by UCalgary Engineering students. I designed this application using Adobe XD, and with the live-chat fully functional, I'm currently working on building the tutoring queue system with 2 other developers.",
     image: 'unichat.png',
     stack: {
       front: ['React', 'TypeScript', 'Material UI'],
