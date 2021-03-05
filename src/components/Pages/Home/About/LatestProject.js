@@ -31,7 +31,7 @@ const useStyles = makeStyles((theme) => ({
     flexDirection: 'row-reverse',
     justifyContent: 'flex-start',
     alignItems: 'center',
-    marginLeft: '1rem',
+    marginBottom: '0.5rem',
     [theme.breakpoints.down('sm')]: {
       margin: '0',
       flexDirection: 'column',
