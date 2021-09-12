@@ -51,13 +51,13 @@ export default function Skills() {
   return(
     <div className={classes.root}>
       <div className={classes.sectionContainer}>
-        {skills.map(section => {
+        {skills.map((section, index) => {
         return (
-          <div className={classes.line}>
+          <div key={index} className={classes.line}>
             <Typography className={classes.name}>{section.name}:</Typography>
               <div className={classes.itemContainer}>
-                {section.items.map(item => {
-                  return <StackItem item={item}/>
+                {section.items.map((item, index) => {
+                  return <StackItem key={index} item={item}/>
                 })}
               </div>
           </div>

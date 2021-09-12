@@ -66,9 +66,9 @@ export default function WorkItem(props) {
       </div>
       {play && 
         <div className={classes.items}>
-          {props.items.map(item => {
+          {props.items.map((item, index) => {
             return (
-              <WorkTaskItem item={item}/>
+              <WorkTaskItem key={index} item={item}/>
             )
           })}
         </div>

@@ -56,8 +56,8 @@ export default function Stack(props) {
         <div className={classes.singleStackContainer}>
         <Typography className={classes.stackText}>FRONT:</Typography>
           <div className={classes.itemContainer}>
-            {props.front.map(item => {
-              return <StackItem item={item}/>
+            {props.front.map((item, index) => {
+              return <StackItem key={index} item={item}/>
             })}
           </div>
         </div>
@@ -66,8 +66,8 @@ export default function Stack(props) {
         <div className={classes.singleStackContainer}>
         <Typography className={classes.stackText}>BACK:</Typography>
           <div className={classes.itemContainer}>
-            {props.back.map(item => {
-              return <StackItem item={item}/>
+            {props.back.map((item, index) => {
+              return <StackItem key={index} item={item}/>
             })}
           </div>
         </div>
@@ -76,8 +76,8 @@ export default function Stack(props) {
         <div className={classes.singleStackContainer}>
           <Typography className={classes.stackText}>DEPLOY:</Typography>
           <div className={classes.itemContainer}>
-              {props.deployment.map(item => {
-              return <StackItem item={item}/>
+              {props.deployment.map((item, index) => {
+              return <StackItem key={index} item={item}/>
             })}
           </div>
         </div>
@@ -86,8 +86,8 @@ export default function Stack(props) {
         <div className={classes.singleStackContainer}>
           <Typography className={classes.stackText}>TEST:</Typography>
           <div className={classes.itemContainer}>
-              {props.test.map(item => {
-              return <StackItem item={item}/>
+              {props.test.map((item, index) => {
+              return <StackItem key={index} item={item}/>
             })}
           </div>
         </div>
@@ -96,8 +96,8 @@ export default function Stack(props) {
         <div className={classes.singleStackContainer}>
           <Typography className={classes.stackText}>OTHER:</Typography>
           <div className={classes.itemContainer}>
-              {props.other.map(item => {
-              return <StackItem item={item}/>
+              {props.other.map((item, index) => {
+              return <StackItem key={index} item={item}/>
             })}
           </div>
         </div>
