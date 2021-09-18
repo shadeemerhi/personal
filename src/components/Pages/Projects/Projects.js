@@ -1,7 +1,18 @@
-import { makeStyles } from '@material-ui/core/styles';
-import { projects } from '../../../data/projects';
+// React
+import React, { useContext } from 'react';
+
+// Contexts
+import { DataContext } from '../../../contexts/DataContext';
+
+// Custom components
 import Project from './Project/Project';
-import Grid from '@material-ui/core/Grid'
+
+// Material UI
+import { makeStyles } from '@material-ui/core/styles';
+import Grid from '@material-ui/core/Grid';
+
+// Static data - TBDep.
+import { projects } from '../../../data/projects';
 
 const useStyles = makeStyles((theme) => ({
   root: {
@@ -9,12 +20,15 @@ const useStyles = makeStyles((theme) => ({
   }
 }));
 
-export default function Projects() {
+const Projects = () => {
   const classes = useStyles();
+
+  const { projectState } = useContext(DataContext);
+  console.log('INSIDE PROJECTS', projects);
 
   return (
     <Grid container className={classes.root}>
-      {projects.map(project => {
+      {projectState.projects.map(project => {
         return <Project
           key={project.id}
           {...project}
@@ -23,3 +37,5 @@ export default function Projects() {
     </Grid>
   )
 }
+
+export default React.memo(Projects);
