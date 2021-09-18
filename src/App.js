@@ -1,3 +1,5 @@
+import { useEffect } from 'react';
+
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 import Grid from '@material-ui/core/Grid';
 import Nav from './components/Nav/Nav';
@@ -8,6 +10,8 @@ import Header from './components/Header';
 import ScrollToTop from './components/ScrollToTop';
 import Contact from './components/Pages/Home/Contact';
 import { makeStyles } from '@material-ui/core/styles';
+
+// import axios from 'axios';
 
 const useStyles = makeStyles((theme) => ({
 
@@ -24,6 +28,16 @@ const useStyles = makeStyles((theme) => ({
 export default function App() {
 
   const classes = useStyles();
+
+  useEffect(() => {
+    
+    const getData = async () => {
+      const response = await fetch('/lol');
+      const data = await response.json();
+      console.log('HERE IS DATA', data);
+    }
+    getData();
+  }, []);
 
   return(
     <Router>
