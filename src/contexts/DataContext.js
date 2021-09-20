@@ -1,11 +1,18 @@
+// React
 import React, { useReducer, useEffect } from 'react';
+
+// Reducer
+import projectsReducer from '../reducers/projectsReducer';
+
+// Static
+import { DEFAULT_PROJECT } from '../data/default_objects';
 
 export const DataContext = React.createContext();
 
 export const DataProvider = ({ children }) => {
 	// Initial state objects
 	const initProjectState = {
-		projects: [],
+		...DEFAULT_PROJECT,
 		loading: false,
 		error: null
 	};
@@ -13,19 +20,6 @@ export const DataProvider = ({ children }) => {
 	const initEducationItems = {};
 	const initSkills = {};
 	const initMiscellaneous = {};
-
-	const projectsReducer = (state, action) => {
-		switch (action.type) {
-			case 'SET_PROJECTS': {
-				return {
-					...state,
-					projects: action.projects
-				};
-			}
-			default:
-				return state;
-		}
-	};
 
 	const workItemsReducer = (state, action) => {};
 
@@ -41,7 +35,8 @@ export const DataProvider = ({ children }) => {
 				const { projects } = await projectAPIData.json();
 				dispatchProjects({ type: 'SET_PROJECTS', projects });
 			} catch (error) {
-				console.log('FETCH PROJECTS ERROR');
+				console.log(error);
+				dispatchProjects({ type: 'PROJECTS_ERROR', error: error.message });
 			}
 		};
 		fetchData();
