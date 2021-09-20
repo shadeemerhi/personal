@@ -1,23 +1,23 @@
-import { makeStyles } from '@material-ui/core/styles';
-import { workExperiences } from '../../../../data/work'
-import WorkItem from './WorkItem';
+// React
+import { useContext } from 'react';
 
-const useStyles = makeStyles((theme) => ({
-  root: {
-  }
-}));
+// Context
+import { DataContext } from '../../../../contexts/DataContext';
+
+// Custom components
+import WorkItem from './WorkItem';
 
 export default function Work() {
 
-  const classes = useStyles();
+  const { workItemState } = useContext(DataContext);
 
   return(
-    <div className={classes.root}>
-      {workExperiences.map((experience, index) => {
+    <>
+      {workItemState.workItems.map((item, index) => {
         return (
-          <WorkItem key={index} {...experience} play={index === 0}/>
+          <WorkItem key={index} {...item} play={item.current} />
         )
       })}
-    </div>
+    </>
   )
 }
