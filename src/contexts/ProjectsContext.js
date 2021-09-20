@@ -1,31 +1,35 @@
 // React
 import React, { useReducer, useEffect } from 'react';
 
-// Reducer
+// Reducers
 import projectsReducer from '../reducers/projectsReducer';
+import workItemsReducer from '../reducers/workItemsReducer';
 
 // Static
 import { DEFAULT_PROJECT } from '../data/default_objects';
 
-export const DataContext = React.createContext();
+export const ProjectContext = React.createContext();
 
-export const DataProvider = ({ children }) => {
+export const ProjectProvider = ({ children }) => {
 	// Initial state objects
 	const initProjectState = {
-		...DEFAULT_PROJECT,
+		projects: [],
+		latestProject: DEFAULT_PROJECT,
 		loading: false,
 		error: null
 	};
-	const initWorkItems = {};
+	const initWorkItemState = {
+		workItems: [],
+		loading: false,
+		error: null
+	};
 	const initEducationItems = {};
 	const initSkills = {};
 	const initMiscellaneous = {};
 
-	const workItemsReducer = (state, action) => {};
-
 	// Initialize state and reducers
 	const [projectState, dispatchProjects] = useReducer(projectsReducer, initProjectState);
-	const [workItems, dispatchWorkItems] = useReducer(workItemsReducer, initWorkItems);
+	const [workItemState, dispatchWorkItems] = useReducer(workItemsReducer, initWorkItemState);
 
 	// Initial API calls
 	useEffect(() => {
@@ -46,5 +50,5 @@ export const DataProvider = ({ children }) => {
 		projectState
 	};
 
-	return <DataContext.Provider value={value}>{children}</DataContext.Provider>;
+	return <ProjectContext.Provider value={value}>{children}</ProjectContext.Provider>;
 };

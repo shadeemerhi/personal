@@ -1,23 +1,23 @@
 // React
 import { useContext } from 'react';
 
-// Context
-import { DataContext } from '../../../../contexts/DataContext';
+// Contexts
+import { WorkContext } from '../../../../contexts/WorkContext';
 
 // Custom components
 import WorkItem from './WorkItem';
 
-export default function Work() {
+const Work = () => {
 
-  const { workItemState } = useContext(DataContext);
+  const { workItemState } = useContext(WorkContext);
 
-  return(
-    <>
-      {workItemState.workItems.map((item, index) => {
-        return (
-          <WorkItem key={index} {...item} play={item.current} />
-        )
-      })}
-    </>
-  )
-}
+	return (
+		<>
+			{workItemState.workItems.map((item, index) => {
+				return <WorkItem key={index} {...item} play={item.current} />;
+			})}
+		</>
+	);
+};
+
+export default Work;

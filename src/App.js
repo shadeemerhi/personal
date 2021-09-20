@@ -1,8 +1,9 @@
 // React
 import { BrowserRouter as Router, Route, Switch } from 'react-router-dom';
 
-// Context
-import { DataProvider } from './contexts/DataContext';
+// Contexts
+import { ProjectProvider } from './contexts/ProjectsContext';
+import { WorkProvider } from './contexts/WorkContext';
 
 // Custom components
 import Nav from './components/Nav/Nav';
@@ -32,24 +33,26 @@ export default function App() {
 
 	return (
 		<Router>
-			<DataProvider>
-				<ScrollToTop />
-				<Grid container>
-					<Grid item xs={12} sm={3}>
-						<Nav />
+			<ProjectProvider>
+				<WorkProvider>
+					<ScrollToTop />
+					<Grid container>
+						<Grid item xs={12} sm={3}>
+							<Nav />
+						</Grid>
+						<Grid item xs={12} sm={9} className={classes.main}>
+							<Header />
+							<Switch>
+								<Route path="/projects" component={Projects} />
+								<Route path="/experience" component={Experience} />
+								<Route path="/experience" />
+								<Route path="/contact" component={Contact} />
+								<Route path="/" component={Home} />
+							</Switch>
+						</Grid>
 					</Grid>
-					<Grid item xs={12} sm={9} className={classes.main}>
-						<Header />
-						<Switch>
-							<Route path="/projects" component={Projects} />
-							<Route path="/experience" component={Experience} />
-							<Route path="/experience" />
-							<Route path="/contact" component={Contact} />
-							<Route path="/" component={Home} />
-						</Switch>
-					</Grid>
-				</Grid>
-			</DataProvider>
+				</WorkProvider>
+			</ProjectProvider>
 		</Router>
 	);
 }

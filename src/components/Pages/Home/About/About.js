@@ -2,7 +2,7 @@
 import { useContext } from 'react';
 
 // Context
-import { DataContext } from '../../../../contexts/DataContext';
+import { ProjectContext } from '../../../../contexts/ProjectsContext';
 
 // Custom components
 import Project from '../../Projects/Project';
@@ -27,7 +27,7 @@ const useStyles = makeStyles(theme => ({
 export default function About(props) {
 	const classes = useStyles();
 
-	const { projectState } = useContext(DataContext);
+	const { projectState } = useContext(ProjectContext);
 
 	useEffect(() => {}, []);
 	return (

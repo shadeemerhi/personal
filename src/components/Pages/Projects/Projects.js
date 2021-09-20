@@ -2,7 +2,7 @@
 import React, { useContext } from 'react';
 
 // Contexts
-import { DataContext } from '../../../contexts/DataContext';
+import { ProjectContext } from '../../../contexts/ProjectsContext';
 
 // Material UI
 import { makeStyles } from '@material-ui/core/styles';
@@ -17,7 +17,7 @@ const useStyles = makeStyles(theme => ({
 
 const Projects = () => {
 	const classes = useStyles();
-	const { projectState } = useContext(DataContext);
+	const { projectState } = useContext(ProjectContext);
 
 	return (
 		<Grid container className={classes.root}>
