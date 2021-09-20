@@ -42,7 +42,7 @@ const useStyles = makeStyles((theme) => ({
 }));
 
 
-export default function Stack(props) {
+export default function Stack({ stack }) {
 
   const classes = useStyles();
 
@@ -52,51 +52,51 @@ export default function Stack(props) {
         <Typography className={classes.stackText} style={{borderBottom: 'none'}}>STACK</Typography>  
       </div>
       <div className={classes.stackContainer}>
-        {props.front.length !== 0 &&
+        {stack.front.length !== 0 &&
         <div className={classes.singleStackContainer}>
         <Typography className={classes.stackText}>FRONT:</Typography>
           <div className={classes.itemContainer}>
-            {props.front.map((item, index) => {
+            {stack.front.map((item, index) => {
               return <StackItem key={index} item={item}/>
             })}
           </div>
         </div>
         }
-        {props.back.length !== 0 &&
+        {stack.back.length !== 0 &&
         <div className={classes.singleStackContainer}>
         <Typography className={classes.stackText}>BACK:</Typography>
           <div className={classes.itemContainer}>
-            {props.back.map((item, index) => {
+            {stack.back.map((item, index) => {
               return <StackItem key={index} item={item}/>
             })}
           </div>
         </div>
         }
-        {props.deployment.length !== 0 &&
+        {stack.deployment.length !== 0 &&
         <div className={classes.singleStackContainer}>
           <Typography className={classes.stackText}>DEPLOY:</Typography>
           <div className={classes.itemContainer}>
-              {props.deployment.map((item, index) => {
+              {stack.deployment.map((item, index) => {
               return <StackItem key={index} item={item}/>
             })}
           </div>
         </div>
         }
-        {props.test.length !== 0 &&
+        {stack.test.length !== 0 &&
         <div className={classes.singleStackContainer}>
           <Typography className={classes.stackText}>TEST:</Typography>
           <div className={classes.itemContainer}>
-              {props.test.map((item, index) => {
+              {stack.test.map((item, index) => {
               return <StackItem key={index} item={item}/>
             })}
           </div>
         </div>
         }
-        {props.other.length !== 0 &&
+        {stack.other.length !== 0 &&
         <div className={classes.singleStackContainer}>
           <Typography className={classes.stackText}>OTHER:</Typography>
           <div className={classes.itemContainer}>
-              {props.other.map((item, index) => {
+              {stack.other.map((item, index) => {
               return <StackItem key={index} item={item}/>
             })}
           </div>
