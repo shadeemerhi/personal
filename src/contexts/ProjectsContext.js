@@ -35,7 +35,7 @@ export const ProjectProvider = ({ children }) => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-				const projectAPIData = await fetch('/lol');
+				const projectAPIData = await fetch('/api/projects');
 				const { projects } = await projectAPIData.json();
 				dispatchProjects({ type: 'SET_PROJECTS', projects });
 			} catch (error) {

@@ -21,7 +21,7 @@ export const WorkProvider = ({ children }) => {
 	useEffect(() => {
 		const fetchData = async () => {
 			try {
-                const workItemAPIData = await fetch('/lol');
+                const workItemAPIData = await fetch('/api/work-items');
 				const { workItems } = await workItemAPIData.json();
                 dispatchWorkItems({ type: 'SET_WORKITEMS', workItems });
 			} catch (error) {
